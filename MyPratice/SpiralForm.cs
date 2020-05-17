@@ -8,54 +8,50 @@ namespace MyPratice
     {
         public void printinSpiralForm()
         {
-            int[,] Array2d = new int[4, 4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
-            int r = 4, c = 4, k = 0, l = 0;
+            //int[,] array2d = new int[4, 4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+            //int m = 4, n = 4, k = 0, l = 0;
 
-            for (int i = 0; i < r; i++)
+            //int[,] array2d = new int[3, 3] { { 1, 2, 3}, { 5, 6, 7 }, { 9, 10, 11 }};
+            //int m = 3, n = 3, k = 0, l = 0;
+
+
+            int[,] array2d = new int[3, 6] { { 1, 2, 3, 4, 5, 6 }, { 7, 8, 9, 10, 11, 12 }, { 13, 14, 15, 16, 17, 18 } };
+            int m = 3, n = 6, k = 0, l = 0;
+            for (int i = 0; i < m; i++)
             {
-                for (int j = 0; j < c; j++)
+                for (int j = 0; j < n; j++)
                 {
-                    Console.Write(Array2d[i, j]);
-                    Console.Write(" ");
+                    Console.Write(array2d[i, j] + " ");
                 }
                 Console.WriteLine();
             }
-            while (k < r && l < c)
+
+            while (k<m && l<n)
             {
-                // Print the first row  
-                // from the remaining rows 
-                for (int i = l; i < r; ++i)
+                for(int i = l; i<n;i++)
                 {
-                    Console.Write(Array2d[k, i] + " ");
+                    Console.Write(array2d[k,i]+ " ");
                 }
                 k++;
 
-                // Print the last column from the 
-                // remaining columns 
-                for (int i = k; i < r; ++i)
+                for(int i = k; i<m; i++)
                 {
-                    Console.Write(Array2d[i, c - 1] + " ");
+                    Console.Write(array2d[i, n-1] + " ");
                 }
-                c--;
-
-                // Print the last row from  
-                // the remaining rows  
-                if (k < r)
+                n--;
+                if (k < m)
                 {
-                    for (int i = c - 1; i >= l; --i)
+                    for (int i = n - 1; i >= l; i--)
                     {
-                        Console.Write(Array2d[r - 1, i] + " ");
+                        Console.Write(array2d[m - 1, i] + " ");
                     }
-                    r--;
+                    m--;
                 }
-
-                // Print the first column from  
-                // the remaining columns 
-                if (l < c)
+                if (l < n)
                 {
-                    for (int i = r - 1; i >= k; --i)
+                    for (int i = m - 1; i >= k; i--)
                     {
-                        Console.Write(Array2d[i, l] + " ");
+                        Console.Write(array2d[i, l] + " ");
                     }
                     l++;
                 }

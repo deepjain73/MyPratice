@@ -13,9 +13,9 @@ namespace MyPratice
 
             for (int i = 0; i < b.Length; i++)
             {
-                if(b[i] < 0 && sum == 0)
+                if(b[i] >0 && sum< 0)
                 {
-                    continue;
+                    sum = 0;
                 }
 
                 sum = sum + b[i];

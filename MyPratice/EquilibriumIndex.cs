@@ -6,24 +6,24 @@ namespace MyPratice
 {
     class EquilibriumIndex
     {
-        public int equilibriumIndex()
+        public int equilibriumIndex(int [] Array,int n)
         {
-            int[] Array = new int[] { -7, 1, 5, 2, -4, 3, 0 };
+            
             int leftsum; int rightsum;
-
-            for(int i = 1; i<Array.Length-1; i++)
+            
+            for(int i = 1; i<n; i++)
             {
                 leftsum = 0;
                 rightsum = 0;
 
                 for(int j = 0; j<i; j++)
                 {
-                    leftsum += Array[j];
+                    leftsum = leftsum + Array[j];
                 }
 
-                for (int j = i+1; j < Array.Length; j++)
+                for (int j = i+1; j < n; j++)
                 {
-                    rightsum += Array[j];
+                    rightsum = rightsum + Array[j];
                 }
 
                 if(leftsum == rightsum)
@@ -36,3 +36,4 @@ namespace MyPratice
         }
     }
 }
+// complexity n*n 

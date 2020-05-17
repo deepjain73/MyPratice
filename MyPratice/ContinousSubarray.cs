@@ -24,8 +24,8 @@ namespace MyPratice
                         if (result == sum)
                         {
                             b = true;
-                            Console.WriteLine("Sum found between indexes " + i + " - " + j);
-                            break;
+                            Console.WriteLine("Sum found between indexes " + i + " and " + j);
+                            
                         }
                     }
                 }

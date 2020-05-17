@@ -31,8 +31,8 @@ namespace MyPratice
             //p.reversestarpattern();
 
             ContiguousSubarray s = new ContiguousSubarray();
-            //int[] b = new int[8] { -2, -3, 4, -1, -2, 1, 5, -3 };
-            //s.SumOfContiguousSubarray(b);
+            int[] b = new int[8] { -2, -3, 4, -1, -2, 1, 5, -3 };
+           // s.SumOfContiguousSubarray(b);
 
 
             Findtheduplicate fd = new Findtheduplicate();
@@ -50,30 +50,32 @@ namespace MyPratice
             //f.findAsubarray();
 
             SortAnArray sa = new SortAnArray();
-            //int[] san = new int[] { 0, 1, 2, 1, 2, 0, 2, 0, 1, 0, 2, 1, 1, 2, 1, 0 };
+            //int[] san = new int[] { 0, 1, 2, 1,2,0,2,0,1 ,0};
             //sa.sortanarray(san);
 
-            EquilibriumIndex eq = new EquilibriumIndex();
-            //Console.WriteLine(eq.equilibriumIndex());
+            //EquilibriumIndex eq = new EquilibriumIndex();
+            //int[] Array = new int[] { -7, 1, 5, 2, -4, 3, 0 };
+            //int n = Array.Length;
+            //Console.WriteLine(eq.equilibriumIndex(Array,7));
 
-            LeadersArray la = new LeadersArray();
+            //LeadersArray la = new LeadersArray();
             //la.leaderArray();
 
-            SmallestElement sr = new SmallestElement();
+            //SmallestElement sr = new SmallestElement();
             //int[] smallarray = new int[] { 7, 10, 4, 3, 20, 15 };
             //int k = 3;
             //Console.Write("The K'th smallest element in given array is " + sr.smallestElement(smallarray, k));
 
-            CountFrequencyUsingDictionaMy cf = new CountFrequencyUsingDictionaMy();
-            //cf.CalcFreq();
+            //CountFrequencyUsingDictionaMy cf = new CountFrequencyUsingDictionaMy();
+            ////cf.CalcFreq();
 
-            dimensional dr = new dimensional();
-            //dr.twodimensionalarray();
-            //dr.Threedimensional();
+            //dimensional dr = new dimensional();
+            ////dr.twodimensionalarray();
+            ////dr.Threedimensional();
 
             SpiralForm sp = new SpiralForm();
             sp.printinSpiralForm();
-            
+
 
 
 

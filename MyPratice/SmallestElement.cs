@@ -10,7 +10,7 @@ namespace MyPratice
         public int smallestElement(int[] smallarray,int k)
         {
             int j; int min; int temp; int n = smallarray.Length;
-            for (int i = 0; i < n-1; i++)
+            for (int i = 0; i < n; i++)
             {
                 min = i;
                 for (j = i+1; j<n; j++)
@@ -25,16 +25,16 @@ namespace MyPratice
                     smallarray[min] = smallarray[i];
                     smallarray[i] = temp;
                }
-            Console.WriteLine("Array in Sorted Form: ");
-            for (int i = 0; i < n; i++)
-            {
-                Console.Write(smallarray[i] + " ");
-            }
+            //Console.WriteLine("Array in Sorted Form: ");
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.Write(smallarray[i] + " ");
+            //}
 
             Console.WriteLine();
 
-            return smallarray[k];
-
+            return smallarray[k-1];
+            // complexity n*n
 
 
         }
