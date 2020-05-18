@@ -67,15 +67,17 @@ namespace MyPratice
             //Console.Write("The K'th smallest element in given array is " + sr.smallestElement(smallarray, k));
 
             //CountFrequencyUsingDictionaMy cf = new CountFrequencyUsingDictionaMy();
-            ////cf.CalcFreq();
+            //cf.CalcFreq();
 
             //dimensional dr = new dimensional();
             ////dr.twodimensionalarray();
             ////dr.Threedimensional();
 
-            SpiralForm sp = new SpiralForm();
-            sp.printinSpiralForm();
+            //SpiralForm sp = new SpiralForm();
+            //sp.printinSpiralForm();
 
+            DecreasingFrequency df = new DecreasingFrequency();
+            df.decreasingFrequency();
 
 
 

@@ -10,9 +10,10 @@ namespace MyPratice
     {
         public void CalcFreq()
         {
-            int[] arr = new int[] { 2, 2, 2, 4, 5, 5, 5, 5 };
+            int[] arr = new int[] { 2, 5, 2, 8, 5, 6, 8, 8 };
             Dictionary<int, int> dic = new Dictionary<int, int>();
             foreach (int i in arr)
+
             {
                 if (dic.ContainsKey(i))
                     dic[i] = dic[i] + 1;
@@ -20,15 +21,15 @@ namespace MyPratice
                     dic.Add(i, 1);
             }
             foreach (var k in dic)
-                {
-                    Console.WriteLine(k);
-                }
-            
-            //var newdic = dic.OrderByDescending(x => x.Value);
-            //foreach (var k in newdic)
-            //{
-            //    Console.WriteLine(k);
-            //}
+            {
+                Console.WriteLine(k);
+            }
+
+            var newdic = dic.OrderByDescending(x => x.Value);
+            foreach (var k in newdic)
+            {
+                Console.WriteLine(k);
+            }
 
 
         }

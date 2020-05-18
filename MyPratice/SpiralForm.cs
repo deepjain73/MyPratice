@@ -17,6 +17,11 @@ namespace MyPratice
 
             int[,] array2d = new int[3, 6] { { 1, 2, 3, 4, 5, 6 }, { 7, 8, 9, 10, 11, 12 }, { 13, 14, 15, 16, 17, 18 } };
             int m = 3, n = 6, k = 0, l = 0;
+
+            //if (n == 0 || n <= 1)
+            //    Console.WriteLine("Array is empty");
+           
+
             for (int i = 0; i < m; i++)
             {
                 for (int j = 0; j < n; j++)
