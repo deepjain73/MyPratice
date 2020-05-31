@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Reflection;
+using System.Collections.Generic;
+
 
 namespace MyPratice
 {
@@ -8,7 +10,7 @@ namespace MyPratice
         static void Main(string[] args)
         {
 
-            Array a = new Array();
+            //Array a = new Array();
             //a.SetArray();
             //a.LoopThroughArray();
             //a.nameprint("Deepti");
@@ -16,40 +18,40 @@ namespace MyPratice
             //a.reversename();
 
 
-            EvenOdd e = new EvenOdd();
+            //EvenOdd e = new EvenOdd();
             //e.EvenorOdd();
             //e.even();
             //e.odd();
             //e.table();
 
-            MathematicalOperators r = new MathematicalOperators();
+            //MathematicalOperators r = new MathematicalOperators();
             //r.addmethod(5, 7);
             //r.subtraction(6, 8);
 
-            Pyramid p = new Pyramid();
+            //Pyramid p = new Pyramid();
             //p.starpattern();
             //p.reversestarpattern();
 
-            ContiguousSubarray s = new ContiguousSubarray();
-            int[] b = new int[8] { -2, -3, 4, -1, -2, 1, 5, -3 };
-           // s.SumOfContiguousSubarray(b);
+            //ContiguousSubarray s = new ContiguousSubarray();
+            //int[] b = new int[8] { -2, -3, 4, -1, -2, 1, 5, -3 };
+            //// s.SumOfContiguousSubarray(b);
 
 
-            Findtheduplicate fd = new Findtheduplicate();
-            //int[] d = new int[5] { 3, 1, 2, 1, 4 };
-            //fd.findduplicate(d);
+            //Findtheduplicate fd = new Findtheduplicate();
+            //int[] d = new int[] { 4,5,2,8,4,9,1,7};
+            //Console.WriteLine(fd.findduplicate(d));
 
-            FindmissingInteger fm = new FindmissingInteger();
+            //FindmissingInteger fm = new FindmissingInteger();
             //Console.WriteLine(fm.missinginteger());
             //fm.missinginteger();
 
-            ContinousSubarray cs = new ContinousSubarray();
+            //ContinousSubarray cs = new ContinousSubarray();
             //cs.continoussubarray();
 
-            FindASubarray f = new FindASubarray();
+            //FindASubarray f = new FindASubarray();
             //f.findAsubarray();
 
-            SortAnArray sa = new SortAnArray();
+            //SortAnArray sa = new SortAnArray();
             //int[] san = new int[] { 0, 1, 2, 1,2,0,2,0,1 ,0};
             //sa.sortanarray(san);
 
@@ -76,8 +78,127 @@ namespace MyPratice
             //SpiralForm sp = new SpiralForm();
             //sp.printinSpiralForm();
 
-            DecreasingFrequency df = new DecreasingFrequency();
-            df.decreasingFrequency();
+            //DecreasingFrequency df = new DecreasingFrequency();
+            //df.decreasingFrequency();
+
+            //MyQueue<int> myqueue = new MyQueue<int>();
+            ////myqueue.Enque(100);
+            ////myqueue.Enque(20);
+            ////myqueue.Enque(10);
+            ////myqueue.Enque(3);
+
+            ////int i = myqueue.Dque();
+            ////Console.WriteLine(i);
+
+            //myqueue.Enqueue(1);
+            //myqueue.Enqueue(2);
+            //myqueue.Enqueue(3);
+            //myqueue.Enqueue(4);
+            //myqueue.Enqueue(5);
+            //myqueue.Dequeue();
+            //myqueue.Dequeue();
+            //myqueue.Enqueue(6);
+            //myqueue.Enqueue(7);
+            //myqueue.Enqueue(8);
+            //myqueue.Enqueue(9);
+            //myqueue.Enqueue(10);
+            //myqueue.Dequeue();
+            //myqueue.Enqueue(11);
+            //myqueue.Enqueue(12);
+            //myqueue.Enqueue(13);
+            //myqueue.Enqueue(14);
+            //myqueue.Enqueue(15);
+            //myqueue.Enqueue(16);
+
+            //foreach (var i in myqueue.array)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //NewQueue newQueue = new NewQueue();
+            //newQueue.Enqueue("D");
+            //newQueue.Enqueue("E");
+            //newQueue.Enqueue("E");
+            //newQueue.Enqueue("P");
+            //newQueue.Enqueue("T");
+            //newQueue.Enqueue("I");
+            //newQueue.Dequeue();
+            //newQueue.Dequeue();
+
+            //foreach (var n in newQueue.array)
+            //{
+            //    Console.WriteLine(n);
+            //}
+
+            //Stack mystack = new Stack();
+            //mystack.push(1);
+            //mystack.push(2);
+            //mystack.push(3);
+            //mystack.push(4);
+            //mystack.push(5);
+            //mystack.pop();
+            //mystack.push(6);
+            //mystack.push(7);
+            //mystack.push(8);
+            //mystack.push(9);
+
+            //////// Console.WriteLine(mystack.Peek());
+
+            //foreach (var i in mystack.array)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //Console.WriteLine();
+
+            //FibonacciRecursion fb = new FibonacciRecursion();
+
+            ////fb.fibonaaci(5);
+            ////Console.WriteLine(fb.fib(4));
+            //Factorial ft = new Factorial();
+            //Console.WriteLine(ft.Fact(4));
+
+            //NextGreaterElement nx = new NextGreaterElement();
+            //nx.printnextelement();
+
+            //ImplementAQueue im = new ImplementAQueue();
+            //im.push(1);
+            //im.push(2);
+            //im.push(3);
+            //im.push(4);
+            //Console.WriteLine(im.pop());
+            //im.push(5);
+            //Console.WriteLine(im.pop());
+            //Console.WriteLine(im.pop()); Console.WriteLine(im.pop()); Console.WriteLine(im.pop());
+            //Console.WriteLine(im.pop());
+
+
+            //ImplementAQueueUsingStack iq = new ImplementAQueueUsingStack();
+            //iq.enqueue(1);
+            //iq.enqueue(2);
+            //iq.enqueue(3);
+            //iq.enqueue(4);
+
+            //Console.WriteLine(iq.dequeue());
+            //iq.enqueue(5);
+            //Console.WriteLine(iq.dequeue());
+            //Console.WriteLine(iq.dequeue());
+            //Console.WriteLine(iq.dequeue());
+            //Console.WriteLine(iq.dequeue());
+
+
+            ImplementAStackUsingQueue si = new ImplementAStackUsingQueue();
+
+            si.push(1);
+            si.push(2);
+            si.push(3);
+            si.push(4);
+            Console.WriteLine(si.pop());
+            si.push(5);
+            Console.WriteLine(si.pop());
+            Console.WriteLine(si.pop());
+            Console.WriteLine(si.pop());
+            Console.WriteLine(si.pop());
 
 
 
