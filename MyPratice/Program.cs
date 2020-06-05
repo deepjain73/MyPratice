@@ -187,20 +187,87 @@ namespace MyPratice
             //Console.WriteLine(iq.dequeue());
 
 
-            ImplementAStackUsingQueue si = new ImplementAStackUsingQueue();
+            //ImplementAStackUsingQueue si = new ImplementAStackUsingQueue();
 
-            si.push(1);
-            si.push(2);
-            si.push(3);
-            si.push(4);
-            Console.WriteLine(si.pop());
-            si.push(5);
-            Console.WriteLine(si.pop());
-            Console.WriteLine(si.pop());
-            Console.WriteLine(si.pop());
-            Console.WriteLine(si.pop());
+            //si.push(1);
+            //si.push(2);
+            //si.push(3);
+            //si.push(4);
+            //si.push(5);
+            //Console.WriteLine(si.pop());
+            //Console.WriteLine(si.pop());
+            //Console.WriteLine(si.pop());
+            //Console.WriteLine(si.pop());
+            //Console.WriteLine(si.pop());
+
+            //FindMinElement f = new FindMinElement();
+            //f.push(8);
+            //f.push(2);
+            //f.push(3);
+            //f.getmin();
+            //f.push(4);
+            //f.push(1);
+            //f.getmin();
+            //f.pop();
+            //f.pop();
+            //f.getmin();
+
+            //Console.WriteLine(f.getmin());
+
+            //LinkedList ll = new LinkedList();
+            //ll.head = new LinkedList.Node(1);
+
+            //LinkedList.Node n1 = new LinkedList.Node(100);
+            //ll.head.next = n1;
+
+            //LinkedList.Node n2 = new LinkedList.Node(200);
+            //n1.next = n2;
 
 
+            //LinkedList.Node n3 = new LinkedList.Node(300);
+            //n2.next = n3;
+
+            //LinkedList.Node n1_1 = new LinkedList.Node(150);
+            //n1.next = n1_1;
+            //n1_1.next = n2;
+
+
+            //ll.printList(ll.head);
+            ////Console.WriteLine("print alternate");
+            ////ll.printAlternateItemInList(ll.head);
+            ////n1_1.next = n3;
+            ////ll.printList(n1);
+
+            //ll.printNthNodeValue(ll.head,5);
+
+
+            ////DoublyLinkedList dl = new DoublyLinkedList();
+            ////dl.head = new DoublyLinkedList.Node(1);
+
+            LRUCache lr = new LRUCache(4);
+            lr.set(1, 10);
+            lr.set(2, 20);
+            lr.set(3, 30);
+            lr.set(4, 40);
+            lr.set(5, 45);
+            // Console.WriteLine("Value for the key: 1 is " + lr.get(1));
+            lr.set(6, 50);
+
+            //Console.WriteLine("Value for the key: 2 is " + lr.get(2));
+            //Console.WriteLine("Value for the key: 3 is " + lr.get(3));
+
+            Console.WriteLine("Value for the key: 1 is " + lr.get(1));
+            //Console.WriteLine("Value for the key: 2 is " + lr.get(2));
+            //Console.WriteLine("Value for the key: 3 is " + lr.get(3));
+            //Console.WriteLine("Value for the key: 4 is " + lr.get(4));
+            //Console.WriteLine("Value for the key: 5 is " + lr.get(5));
+            //Console.WriteLine("Value for the key: 6 is " + lr.get(6));
+            //Console.WriteLine("Value for the key: 7 is " + lr.get(7));
+
+
+            //NonRepeatingChar ch = new NonRepeatingChar();
+            //char c = "aabc";
+            //ch.nonrepeatingchar(c);
 
 
             Console.ReadLine();
