@@ -27,13 +27,15 @@ namespace MyPratice
             if (s.tail == 0)
             {
                 currentmin = data;
+                s.push(data);
             }
 
-            if (data < currentmin)
+            else if (data < currentmin)
             {
+                s.push(2 *data - currentmin);
                 currentmin = data;
             }
-
+            else
             s.push(data);
         }
 
@@ -46,7 +48,7 @@ namespace MyPratice
 
             if( m < currentmin)
             {
-                currentmin = m;
+                currentmin = 2 * currentmin - m;
             }
 
             return m;

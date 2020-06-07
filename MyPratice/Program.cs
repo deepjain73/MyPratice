@@ -187,7 +187,7 @@ namespace MyPratice
             //Console.WriteLine(iq.dequeue());
 
 
-            //ImplementAStackUsingQueue si = new ImplementAStackUsingQueue();
+            ImplementAStackUsingQueue si = new ImplementAStackUsingQueue();
 
             //si.push(1);
             //si.push(2);
@@ -200,17 +200,20 @@ namespace MyPratice
             //Console.WriteLine(si.pop());
             //Console.WriteLine(si.pop());
 
-            //FindMinElement f = new FindMinElement();
-            //f.push(8);
-            //f.push(2);
+            FindMinElement f = new FindMinElement();
             //f.push(3);
+            //f.push(7);
+            //f.push(5);
             //f.getmin();
-            //f.push(4);
+            //f.push(2);
             //f.push(1);
             //f.getmin();
             //f.pop();
             //f.pop();
-            //f.getmin();
+            ////f.pop();
+            ////f.pop();
+            ////f.pop();
+
 
             //Console.WriteLine(f.getmin());
 
@@ -244,19 +247,20 @@ namespace MyPratice
             ////DoublyLinkedList dl = new DoublyLinkedList();
             ////dl.head = new DoublyLinkedList.Node(1);
 
-            LRUCache lr = new LRUCache(4);
-            lr.set(1, 10);
-            lr.set(2, 20);
-            lr.set(3, 30);
-            lr.set(4, 40);
-            lr.set(5, 45);
-            // Console.WriteLine("Value for the key: 1 is " + lr.get(1));
-            lr.set(6, 50);
+            //LRUCache lr = new LRUCache(4);
+            //lr.set(1, 10);
+            //lr.set(2, 20);
+            //lr.set(1, 30);
+            //Console.WriteLine("Value for the key: 1 is " + lr.get(1));
+            //lr.set(4, 40);
+            //lr.set(5, 45);
+            ////Console.WriteLine("Value for the key: 1 is " + lr.get(1));
+            //lr.set(6, 50);
 
             //Console.WriteLine("Value for the key: 2 is " + lr.get(2));
             //Console.WriteLine("Value for the key: 3 is " + lr.get(3));
 
-            Console.WriteLine("Value for the key: 1 is " + lr.get(1));
+            //Console.WriteLine("Value for the key: 1 is " + lr.get(1));
             //Console.WriteLine("Value for the key: 2 is " + lr.get(2));
             //Console.WriteLine("Value for the key: 3 is " + lr.get(3));
             //Console.WriteLine("Value for the key: 4 is " + lr.get(4));
@@ -265,9 +269,18 @@ namespace MyPratice
             //Console.WriteLine("Value for the key: 7 is " + lr.get(7));
 
 
-            //NonRepeatingChar ch = new NonRepeatingChar();
-            //char c = "aabc";
-            //ch.nonrepeatingchar(c);
+
+            NonRepeatingChar nr = new NonRepeatingChar();
+            nr.firstnonrepeatingch('a');
+            nr.firstnonrepeatingch('a');
+            nr.firstnonrepeatingch('c');
+            nr.firstnonrepeatingch('d');
+            nr.firstnonrepeatingch('d');
+            nr.firstnonrepeatingch('c');
+            nr.firstnonrepeatingch('y');
+            nr.firstnonrepeatingch('d');
+
+
 
 
             Console.ReadLine();

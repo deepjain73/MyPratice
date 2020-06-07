@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 
@@ -7,15 +8,15 @@ namespace MyPratice
 {
     class NonRepeatingChar
     {
-        public Dictionary<char, int> mydic;
-        public int count;
-        
+        //public Dictionary<char, int> mydic;
+        //public int count;
 
-        public NonRepeatingChar()
-        {
-            mydic = new Dictionary<char, int>();
-            count = 0;
-        }
+
+        //public NonRepeatingChar()
+        //{
+        //    mydic = new Dictionary<char, int>();
+        //    count = 0;
+        //}
 
         //public char nonrepeatingchar(char c)
         //{
@@ -54,5 +55,40 @@ namespace MyPratice
         //    }
 
         //}
+
+        public Dictionary<char, int> mydic;
+
+        public NonRepeatingChar()
+        {
+            mydic = new Dictionary<char, int>();
+        }
+
+        public void firstnonrepeatingch(char c)
+        {
+            if (!mydic.ContainsKey(c))
+            {
+                mydic.Add(c, 1);
+            }
+
+            else
+            {
+                mydic[c]++;
+            }
+
+            foreach (var i in mydic)
+            {
+                //Console.WriteLine(i.Key + " " +  i.Value);
+                if (i.Value == 1)
+                {
+                    Console.WriteLine("First non repeating char " + i.Key);
+                    return;
+                }
+            }
+
+            Console.WriteLine("No non repeating element " + "-1");
+        }
     }
 }
+
+    
+

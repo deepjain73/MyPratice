@@ -25,8 +25,8 @@ namespace MyPratice
             {
                 key = k;
                 value = v;
-                prev = null;
-                next = null;
+                //prev = null;
+                //next = null;
             }
         }
         public LRUCache(int s)
@@ -67,7 +67,7 @@ namespace MyPratice
                 Console.WriteLine("Got the value : " + result + " for the key: " + k);
                 return result;
             }
-           Console.WriteLine("Did not get any value" + " for the key: " + k);
+           Console.WriteLine("Did not get any value for the key: " + k);
             return -1;
         }
 
@@ -89,8 +89,8 @@ namespace MyPratice
                 dic.Add(k, n);
                 if (Itemcount < size)
                 {
-                    Itemcount++;
-                    addnode(n);
+                  addnode(n);
+                  Itemcount++;
                 }
                 else
                 {
