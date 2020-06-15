@@ -270,20 +270,56 @@ namespace MyPratice
 
 
 
-            NonRepeatingChar nr = new NonRepeatingChar();
-            nr.firstnonrepeatingch('a');
-            nr.firstnonrepeatingch('a');
-            nr.firstnonrepeatingch('c');
-            nr.firstnonrepeatingch('d');
-            nr.firstnonrepeatingch('d');
-            nr.firstnonrepeatingch('c');
-            nr.firstnonrepeatingch('y');
-            nr.firstnonrepeatingch('d');
+            //NonRepeatingChar nr = new NonRepeatingChar();
+            //nr.firstnonrepeatingch('a');
+            //nr.firstnonrepeatingch('a');
+            //nr.firstnonrepeatingch('c');
+            //nr.firstnonrepeatingch('d');
+            //nr.firstnonrepeatingch('d');
+            //nr.firstnonrepeatingch('c');
+            //nr.firstnonrepeatingch('y');
+            //nr.firstnonrepeatingch('d');
+
+            //Palindrome pm = new Palindrome();
+            //string S = "madam";
+            //pm.palindrome(S);
+
+            //LongestPalidromic lp = new LongestPalidromic();
+            //string S = "babad";
+            //lp.findlps(S);
+
+            //Reversestring rs = new Reversestring();
+            //rs.reversestring();
+
+            //RemoveDuplicates rm = new RemoveDuplicates();
+            //string t = "azxxzy";
+            //int i = 0;
+            //rm.removeduplicate();
+
+            //RotatingString rs = new RotatingString();
+            //string a = "amazon", b = "azonam";//anticlock
+            //string a1 = "amazon", b1 = "onamaz"; //clockwise
+
+            //if (rs.rotatestring(a, b, 2))
+            //{
+            //    Console.WriteLine("Anticlockwise Rotated");
+            //    Console.WriteLine("Clockwise Rotated");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Anticlockwise NOT Rotated");
+            //    Console.WriteLine("Clockwise not Rotated");
+            //}
+
+            RomanToIntConversion rc = new RomanToIntConversion();
+            rc.romantoint("2");
+            rc.romantoint("V");
+            rc.romantoint("III");
 
 
 
 
-            Console.ReadLine();
+                Console.ReadLine();
 
            
 
