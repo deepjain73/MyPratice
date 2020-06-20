@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace MyPratice
@@ -12,11 +13,14 @@ namespace MyPratice
         {
             int maxlength = 0, n = S.Length, startindex = 0, endindex = 0;
 
-            for(int i=0; i<n; i++)
+            if (S.Length == 0 || S.Length <= 1)
+                Console.WriteLine("Array is empty");
+
+            for(int i=0; i<n;i++)
             {
                 for(int j=i+1; j<=n-i; j++)
                 {
-                    if(palindrome(S.Substring(i,j)))
+                    if(ispalindrome(S.Substring(i,j)))
                     {
                         if(j-i > maxlength)
                         {
@@ -25,30 +29,35 @@ namespace MyPratice
                             endindex = j;
                         }
                     }
+                       
                 }
             }
 
             if (maxlength > 0)
-            {
-                Console.WriteLine(S.Substring(startindex, endindex) + " " + maxlength);
-            }
+                Console.WriteLine("The longerst palindromic substring in S is " + S.Substring(startindex,endindex) + " " + maxlength);
 
             else
-            { 
-                Console.WriteLine("No longest palindromic substring found");
-            }
+                Console.WriteLine(" No longest palindromic substring in S found");
 
         }
-
-
-        public bool palindrome(string r)
+        
+        public bool ispalindrome(string c)
         {
-            for(int i=0,j=r.Length-1; i<r.Length/2; i++,j--)
+            for(int i=0,j=c.Length-1; i<c.Length/2; i++,j--)
             {
-                if (r[i] != r[j])
+                if (c[i] != c[j])
                     return false;
             }
+
             return true;
         }
+
+        
+
+
+
+
+
+            
     }
 }

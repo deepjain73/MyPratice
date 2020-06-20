@@ -287,6 +287,10 @@ namespace MyPratice
             //LongestPalidromic lp = new LongestPalidromic();
             //string S = "babad";
             //lp.findlps(S);
+            //string s = "ABCDEFGHIJ";
+            //Console.WriteLine(s.Substring(1,2));
+            //Console.WriteLine(s.Substring(2, 2));
+            //Console.WriteLine(s.Substring(3, 2));
 
             //Reversestring rs = new Reversestring();
             //rs.reversestring();
@@ -297,13 +301,14 @@ namespace MyPratice
             //rm.removeduplicate();
 
             //RotatingString rs = new RotatingString();
-            //string a = "amazon", b = "azonam";//anticlock
+
+            //string a = "amazon", b = "onamaz";//anticlock
             //string a1 = "amazon", b1 = "onamaz"; //clockwise
 
             //if (rs.rotatestring(a, b, 2))
             //{
             //    Console.WriteLine("Anticlockwise Rotated");
-            //    Console.WriteLine("Clockwise Rotated");
+            //    //Console.WriteLine("Clockwise Rotated");
             //}
             //else
             //{
@@ -312,14 +317,40 @@ namespace MyPratice
             //}
 
             RomanToIntConversion rc = new RomanToIntConversion();
-            rc.romantoint("2");
-            rc.romantoint("V");
-            rc.romantoint("III");
+            //rc.romantoint("2");
+            //rc.romantoint("V");
+           //rc.romantoint("III");
+            rc.romantoint("VIII");
+           // rc.romantoint("MCMIV");
+
+            //LCSubstring lc = new LCSubstring();
+            //lc.findlcs();
+
+            //Longestsubstringwithoutdup lp = new Longestsubstringwithoutdup();
+            //lp.findlswithoutdup();
+
+            //ImplementAtoi im = new ImplementAtoi();
+            //im.atoi();
+
+            //ImplementStrStr sr = new ImplementStrStr();
+            //Console.WriteLine(sr.strstr());
+
+            //LongestCP lc = new LongestCP();
+            //lc.findlcp();
 
 
+            //test t = new test();
+            //if(t.findroating(2))
+            //{
+            //    Console.WriteLine("isrotating");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("notrotating");
+            //}
 
 
-                Console.ReadLine();
+            Console.ReadLine();
 
            
 

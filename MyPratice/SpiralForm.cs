@@ -65,6 +65,27 @@ namespace MyPratice
     }
 }
 
+
+//int j;
+//            for(int i =0;i<s.Length;i++)
+//            {
+//                if(s[i]==x[0])
+//                {
+//                    for (j = 0; j<x.Length; j++)
+//                    {
+//                        if (s[i + j] != x[j])
+//                        {
+//                            break;
+//                        }
+//                    }
+//                    if (j == x.Length)
+//                    {
+//                       Console.WriteLine(i);
+//                    }
+//                }
+//            }
+//            return -1;
+//        }
  
 
 

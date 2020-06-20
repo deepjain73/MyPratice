@@ -30,6 +30,7 @@ namespace MyPratice
         public void romantoint(string s)
         {
              int result = 0; 
+
             for(int i=0; i<s.Length;i++)
             {
                int a = value(s[i]);

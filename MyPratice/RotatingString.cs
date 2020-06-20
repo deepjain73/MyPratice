@@ -16,16 +16,16 @@ namespace MyPratice
             if (a.Length != b.Length)
                 return false;
 
-            var t = shiftClockWise(a.ToCharArray(), shiftby);
-            var v = shiftAnticlockwise(a.ToCharArray(), shiftby);           
+            var t = shiftClockwise(b.ToCharArray(), shiftby);
+            var v = shiftAnticlockWise(b.ToCharArray(), shiftby);           
 
-            if (b == t || b==v)
+            if (a == t || a == v)
                 return true;
             else
                 return false; 
         }
 
-        public string shiftClockWise(char[] ch, int shiftpositions)
+        public string shiftAnticlockWise(char[] ch, int shiftpositions)
         {
             int n = ch.Length;
             for (int s = 0; s < shiftpositions; s++)
@@ -40,7 +40,7 @@ namespace MyPratice
             return new string(ch);
         }
 
-        public string shiftAnticlockwise(char[]ch,int shiftpositions)
+        public string shiftClockwise(char[]ch,int shiftpositions)
         {
             int n = ch.Length;
             for (int s = 0; s < shiftpositions; s++)
