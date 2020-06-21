@@ -7,13 +7,18 @@ namespace MyPratice
 {
     class ImplementStrStr
     {
-        string s = "the whole world is mad mad and i am best";
-        string x = "is mad";
+        string s = "coding is fun";
+        string x = "is";
 
         public string strstr()
         {
-            int startindex = 0;
+                                                                                                                                                                                                                                                                                 int startindex = 0;
             bool bFound = false;
+
+            if (s.Length == 0 || x.Length == 0)
+                return "string is empty";
+
+
             for (int i = 0; i < s.Length && bFound == false; i++)
             {
                 for (int j = 0; j < x.Length && !bFound; j++)
@@ -36,12 +41,12 @@ namespace MyPratice
                 }
             }
 
-            if (startindex > 0)
+            if (startindex > 0)                                              
             {
                 return s.Substring(startindex, s.Length - startindex);
-            }
-            else
-            {
+            }                                                                                                                                                                                
+            else                                                                                                               
+            {                                      
                 return "-1";
             }
         }

@@ -6,22 +6,34 @@ namespace MyPratice
 {
     class ImplementAtoi
     {
-        string a = "a4367";
+        string a = "1234";
 
-        public void atoi()
+        public int atoi()
         {
             int output = 0;
-            for(int i =0; i<a.Length; i++)
+
+            if(a.Length == 0 || a.Length <= 1)
             {
-                if(a[i] <48 || a[i]>59)
-                {
-                    Console.WriteLine("Not valid integer");
-                    break;
-                }
-                output = output * 10 + a[i] - '0';
+                return -1;
             }
 
-            Console.WriteLine(output);
+            for(int i =0; i<a.Length; i++)
+            {
+                if (a[i] < 48 || a[i] > 59)
+                {
+                    //Console.WriteLine("Not valid integer");
+                    //break;
+                    return -1;
+                }
+
+                else
+                {
+                    output = output * 10 + a[i] - '0';
+                }
+            }
+
+            //Console.WriteLine(output);
+            return output;
         }
     }
 }

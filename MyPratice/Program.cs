@@ -316,27 +316,27 @@ namespace MyPratice
             //    Console.WriteLine("Clockwise not Rotated");
             //}
 
-            RomanToIntConversion rc = new RomanToIntConversion();
-            //rc.romantoint("2");
-            //rc.romantoint("V");
-           //rc.romantoint("III");
-            rc.romantoint("VIII");
-           // rc.romantoint("MCMIV");
+            // RomanToIntConversion rc = new RomanToIntConversion();
+            // //rc.romantoint("2");
+            // //rc.romantoint("V");
+            ////rc.romantoint("III");
+            // rc.romantoint("VIII");
+            // // rc.romantoint("MCMIV");
 
-            //LCSubstring lc = new LCSubstring();
-            //lc.findlcs();
+            // LCSubstring lc = new LCSubstring();
+            // lc.findlcs();
 
-            //Longestsubstringwithoutdup lp = new Longestsubstringwithoutdup();
-            //lp.findlswithoutdup();
+            // Longestsubstringwithoutdup lp = new Longestsubstringwithoutdup();
+            // lp.findlswithoutdup();
 
             //ImplementAtoi im = new ImplementAtoi();
-            //im.atoi();
+            //Console.WriteLine( im.atoi());
 
             //ImplementStrStr sr = new ImplementStrStr();
             //Console.WriteLine(sr.strstr());
 
-            //LongestCP lc = new LongestCP();
-            //lc.findlcp();
+            LongestCP lc = new LongestCP();
+            lc.findlcp();
 
 
             //test t = new test();

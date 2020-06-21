@@ -6,12 +6,15 @@ namespace MyPratice
 {
     class LCSubstring
     {
-        string X = "zxabcdezy";
-        string Y = "yzabcdezx";
+        string X = "abcdxyz";
+        string Y = "xyzabcd";
 
         public void findlcs()
         {
             int maxlength = 0, maxcurrentlen, startindex=0, endindex=0;
+
+            if(X == null || Y == null)
+                Console.WriteLine("String is empty");
 
             for(int i=0; i<X.Length ; i++)
             {

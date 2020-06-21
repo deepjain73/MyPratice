@@ -9,9 +9,9 @@ namespace MyPratice
 {
     class LongestCP
     {
-        string[] N = { "appele", "appe", "apperil" };
+        string[] N = { "apple", "ape", "april" };
 
-        Dictionary<string, int> mydic = new Dictionary<string, int>();
+        Dictionary<string, int> dic = new Dictionary<string, int>();
 
 
         public void findlcp()
@@ -22,17 +22,17 @@ namespace MyPratice
                 foreach (char c in i)
                 {
                     sbTemp.Append(c);
-                    if (mydic.ContainsKey(sbTemp.ToString()))                    
-                        mydic[sbTemp.ToString()] = mydic[sbTemp.ToString()] + 1;                    
+                    if (dic.ContainsKey(sbTemp.ToString()))                    
+                        dic[sbTemp.ToString()] = dic[sbTemp.ToString()] + 1;                    
                     else                    
-                        mydic.Add(sbTemp.ToString(), 1);
+                        dic.Add(sbTemp.ToString(), 1);
                 }
             }
-            var maxvalue = mydic.Values.Max();
+            var maxvalue = dic.Values.Max();
             //var result = mydic.Where(d => d.Value == 5).OrderByDescending(d => d.Key.Length).FirstOrDefault();
             var maxlength = 0;
             string result = "";
-            foreach (var k in mydic.Where(d => d.Value == maxvalue))
+            foreach (var k in dic.Where(d => d.Value == maxvalue))
             {
                 if (k.Key.Length > maxlength)
                 {
@@ -40,7 +40,7 @@ namespace MyPratice
                     maxlength = result.Length;
                 }
             }
-            Console.WriteLine("Longest frequent substring is :" + result);
+            Console.WriteLine("Longest frequent substring is " + result + " and maxlength is " + maxlength);
         }
 
         //public void findmaxlength()
