@@ -335,8 +335,8 @@ namespace MyPratice
             //ImplementStrStr sr = new ImplementStrStr();
             //Console.WriteLine(sr.strstr());
 
-            LongestCP lc = new LongestCP();
-            lc.findlcp();
+            //LongestCP lc = new LongestCP();
+            //lc.findlcp();
 
 
             //test t = new test();
@@ -348,18 +348,25 @@ namespace MyPratice
             //{
             //    Console.WriteLine("notrotating");
             //}
+            //URL_shortner us = new URL_shortner();
+            //var code = us.decode("aaa");
+            //var output = us.encode(code);
+            //Console.WriteLine(output);       
+            //Console.ReadLine();
+
+            ShortURL su = new ShortURL();
+            Console.WriteLine(su.getshortURL("www.google.com"));
+            Console.WriteLine(su.getshortURL("www.microsoft.com"));
+            Console.WriteLine(su.getshortURL("www.google.com"));
 
 
-            Console.ReadLine();
-
-           
-
-           
 
 
-           
-        
-            
+
+
+
+
+
         }
     }
 }
