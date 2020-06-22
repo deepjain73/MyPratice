@@ -354,13 +354,20 @@ namespace MyPratice
             //Console.WriteLine(output);       
             //Console.ReadLine();
 
-            ShortURL su = new ShortURL();
-            Console.WriteLine(su.getshortURL("www.google.com"));
-            Console.WriteLine(su.getshortURL("www.microsoft.com"));
-            Console.WriteLine(su.getshortURL("www.google.com"));
+            //ShortURL su = new ShortURL();
+            //Console.WriteLine(su.getshortURL("www.google.com"));
+            //Console.WriteLine(su.getshortURL("www.microsoft.com"));
+            //Console.WriteLine(su.getshortURL("www.google.com"));
 
 
+            //string input = "azxxzy";           
+            //RemoveDuplicates rd = new RemoveDuplicates();
+            //var newCh = rd.removeDups(input);
+            //Console.WriteLine(new string(newCh));
 
+            test1 t = new test1();
+            string s = "azxxzy";
+            Console.WriteLine(t.radc(s));
 
 
 

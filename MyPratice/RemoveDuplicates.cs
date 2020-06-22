@@ -7,73 +7,68 @@ namespace MyPratice
 {
     class RemoveDuplicates
     {
-        char[] ch = new char[] { 'a', 'a','a', 'b', 'c', 'b', 'd', 'd' };
-        Stack<char> s1 = new Stack<char>();
-        Stack<char> s2 = new Stack<char>();
-
-
-
-        public void FillStackS1()
+       public string removeDups(string input)
         {
-            char lastchar = '\0';            
-            for(int i =0;i<ch.Length;i++)
+            bool bDupFound = false;
+            for(int i =1; i<input.Length;i++)
             {
-                if (lastchar != ch[i])
-                    s1.Push(ch[i]);
-                else
+                if (input[i - 1] == input[i])
                 {
-                    s1.Pop();
-                }    
-                    
-                lastchar = ch[i];
+                    bDupFound = true;
+                    break;                   
+                }                
             }
-        }
-        public void CompareStacks()
-        {
-            bool NoMoreDups = false;
-            while(true)
+            if (bDupFound == true)
             {
-                char lastchar = '\0';
-                if (s1.Count > 0)
+                input = removeContinousDups(input);
+            }
+            else
+            {
+                return input;
+            }
+            return removeDups(input);
+        }
+      
+
+        public string removeContinousDups(string ch)
+        {
+            int startindex = 0, endindex = 0;
+            bool bFoundEndIndex = false;
+
+            for (int i = 0; i < ch.Length - 1; i++)
+            {
+                if (ch[i] == ch[i + 1])
                 {
-                    char c = s1.Pop();
-                    if (c != lastchar)
-                        s2.Push(c);
-                    lastchar = c;
+                    startindex = i;
+
+                    for (int j = i; j < ch.Length - 1; j++)
+                    {
+                        if (ch[j] == ch[j + 1])
+                        {
+                            if (j + 1 == ch.Length - 1)
+                            {
+                                endindex = j + 1;
+                                bFoundEndIndex = true;
+                                break;
+                            }
+                            continue;
+                        }
+                        else
+                        {
+                            endindex = j;
+                            bFoundEndIndex = true;
+                            break;
+                        }
+                    }
                 }
-                else
+                if (bFoundEndIndex == true)
                     break;
-
             }
-        }
-            
-        public void removeduplicate()
-        {
-            FillStackS1();
-            CompareStacks();
-            
-            //int i = 0;
-            //char[] chNew = new char[ch.Length];
-            //if (ch.Length == 0 || ch.Length == 1)
-            //    return ;
-
-            //if (currentcharIndex == ch.Length - 1)
-            //    return;
-
-            //if (ch[currentcharIndex] == ch[currentcharIndex + 1])
-            //{
-            //    while (i < ch.Length-1)
-            //    {
-            //        ch[i] = ch[i + 1];
-            //        i++;
-            //    }                
-            //}
-            //removeduplicate(currentcharIndex + 1);
-            Console.WriteLine(ch);
+            var t = new string(ch);
+            return t.Remove(startindex, endindex + 1 - startindex);
 
         }
 
-       
-            
-     }
+
+    }
 }
