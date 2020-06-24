@@ -365,9 +365,21 @@ namespace MyPratice
             //var newCh = rd.removeDups(input);
             //Console.WriteLine(new string(newCh));
 
-            test1 t = new test1();
-            string s = "azxxzy";
-            Console.WriteLine(t.radc(s));
+            //test1 t = new test1();
+            //string s = "azxxzy";
+            //Console.WriteLine(t.radc(s));
+
+
+            BinaryTree br = new BinaryTree();
+            BinaryTree.Node root = new BinaryTree.Node(1);
+            root.left = new BinaryTree.Node(2);
+            root.right = new BinaryTree.Node(3);
+            root.left.left = new BinaryTree.Node(4);
+            root.right.right = new BinaryTree.Node(5);
+            root.left.left.left = new BinaryTree.Node(6);
+            
+
+            Console.WriteLine(br.countNodes(root));
 
 
 
