@@ -187,7 +187,7 @@ namespace MyPratice
             //Console.WriteLine(iq.dequeue());
 
 
-            ImplementAStackUsingQueue si = new ImplementAStackUsingQueue();
+            //ImplementAStackUsingQueue si = new ImplementAStackUsingQueue();
 
             //si.push(1);
             //si.push(2);
@@ -200,7 +200,7 @@ namespace MyPratice
             //Console.WriteLine(si.pop());
             //Console.WriteLine(si.pop());
 
-            FindMinElement f = new FindMinElement();
+            // FindMinElement f = new FindMinElement();
             //f.push(3);
             //f.push(7);
             //f.push(5);
@@ -370,16 +370,55 @@ namespace MyPratice
             //Console.WriteLine(t.radc(s));
 
 
-            BinaryTree br = new BinaryTree();
-            BinaryTree.Node root = new BinaryTree.Node(1);
-            root.left = new BinaryTree.Node(2);
-            root.right = new BinaryTree.Node(3);
-            root.left.left = new BinaryTree.Node(4);
-            root.right.right = new BinaryTree.Node(5);
-            root.left.left.left = new BinaryTree.Node(6);
-            
+            //BinaryTree br = new BinaryTree();
+            //BinaryTree.Node root = new BinaryTree.Node(1);
+            //root.left = new BinaryTree.Node(2);
+            //root.right = new BinaryTree.Node(3);
+            //root.left.left = new BinaryTree.Node(4);
+            //root.right.right = new BinaryTree.Node(5);
+            //root.left.left.left = new BinaryTree.Node(6);
 
-            Console.WriteLine(br.countNodes(root));
+
+            //Console.WriteLine(br.countNodes(root));
+
+            //PreorderDepthFirstTraversal pd = new PreorderDepthFirstTraversal();
+            //PreorderDepthFirstTraversal.Node n = new PreorderDepthFirstTraversal.Node(10);
+            //n.left = new PreorderDepthFirstTraversal.Node(5);
+            //n.right = new PreorderDepthFirstTraversal.Node(8);
+            //n.left.left = new PreorderDepthFirstTraversal.Node(2);
+            //n.right.right = new PreorderDepthFirstTraversal.Node(9);
+            //n.left.right = new PreorderDepthFirstTraversal.Node(6);
+            //n.right.left = new PreorderDepthFirstTraversal.Node(7);
+            //n.left.left.left = new PreorderDepthFirstTraversal.Node(1);
+
+            //pd.preorder(n);
+
+            //InorderDepthFirstTraversal id = new InorderDepthFirstTraversal();
+            //InorderDepthFirstTraversal.Node n = new InorderDepthFirstTraversal.Node(10);
+            //n.left = new InorderDepthFirstTraversal.Node(5);
+            //n.right = new InorderDepthFirstTraversal.Node(8);
+            //n.left.left = new InorderDepthFirstTraversal.Node(2);
+            //n.right.right = new InorderDepthFirstTraversal.Node(9);
+            //n.left.right = new InorderDepthFirstTraversal.Node(6);
+            //n.right.left = new InorderDepthFirstTraversal.Node(7);
+            //n.left.left.left = new InorderDepthFirstTraversal.Node(1);
+
+            //id.inorder(n);
+
+            PostOrderDepthFirstTraversal id = new PostOrderDepthFirstTraversal();
+            PostOrderDepthFirstTraversal.Node n = new PostOrderDepthFirstTraversal.Node(10);
+            n.left = new PostOrderDepthFirstTraversal.Node(5);
+            n.right = new PostOrderDepthFirstTraversal.Node(8);
+            n.left.left = new PostOrderDepthFirstTraversal.Node(2);
+            n.right.right = new PostOrderDepthFirstTraversal.Node(9);
+            n.left.right = new PostOrderDepthFirstTraversal.Node(6);
+            n.right.left = new PostOrderDepthFirstTraversal.Node(7);
+            n.left.left.left = new PostOrderDepthFirstTraversal.Node(1);
+
+            id.postorder(n);
+
+
+
 
 
 
