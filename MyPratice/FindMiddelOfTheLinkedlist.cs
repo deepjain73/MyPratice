@@ -20,19 +20,49 @@ namespace MyPratice
             }
         }
 
-        public void findmiddle(Node n)
+        public int findmiddle(Node n)
+        {
+            if (head == null || head.next == null)
+                Console.WriteLine("List is empty");
+
+            var slowpointer = head;
+            var fastpointer = head;
+
+            if (head != null)
+            {
+                while (fastpointer != null && fastpointer.next != null)
+                {
+                    fastpointer = fastpointer.next.next;
+                    slowpointer = slowpointer.next;
+                }
+
+            }
+
+            return slowpointer.data;
+        }
+
+        //public void addnode(Node n, int data)
+        //{
+        //    while (n != null)
+        //    {
+        //        Console.WriteLine(n.data);
+        //        n = n.next;
+        //        if (n != null)
+        //            n = n.next;
+        //    }
+        //}
+
+
+    public void printList(Node n)
         {
             if (head == null || head.next == null)
                 Console.WriteLine("head is null");
-            
-            
-            
-            //why head is assigned to local variable, isn't it Node n?????--Kapil
 
-            var slow = head;
-            var fast = head;
-
-            
+            while (n != null)
+            {
+                Console.WriteLine(n.data);
+                n = n.next;
+            }
         }
     }
 }

@@ -375,8 +375,12 @@ namespace MyPratice
             //root.left = new BinaryTree.Node(2);
             //root.right = new BinaryTree.Node(3);
             //root.left.left = new BinaryTree.Node(4);
-            //root.right.right = new BinaryTree.Node(5);
-            //root.left.left.left = new BinaryTree.Node(6);
+            //root.right.right = new BinaryTree.Node(7);
+            //root.left.right = new BinaryTree.Node(5);
+            //root.right.left = new BinaryTree.Node(6);
+            //root.left.left.left = new BinaryTree.Node(8);
+
+            //br.breadthfirstsearch(root);
 
 
             //Console.WriteLine(br.countNodes(root));
@@ -405,25 +409,59 @@ namespace MyPratice
 
             //id.inorder(n);
 
-            PostOrderDepthFirstTraversal id = new PostOrderDepthFirstTraversal();
-            PostOrderDepthFirstTraversal.Node n = new PostOrderDepthFirstTraversal.Node(10);
-            n.left = new PostOrderDepthFirstTraversal.Node(5);
-            n.right = new PostOrderDepthFirstTraversal.Node(8);
-            n.left.left = new PostOrderDepthFirstTraversal.Node(2);
-            n.right.right = new PostOrderDepthFirstTraversal.Node(9);
-            n.left.right = new PostOrderDepthFirstTraversal.Node(6);
-            n.right.left = new PostOrderDepthFirstTraversal.Node(7);
-            n.left.left.left = new PostOrderDepthFirstTraversal.Node(1);
+            //PostOrderDepthFirstTraversal id = new PostOrderDepthFirstTraversal();
+            //PostOrderDepthFirstTraversal.Node n = new PostOrderDepthFirstTraversal.Node(10);
+            //n.left = new PostOrderDepthFirstTraversal.Node(5);
+            //n.right = new PostOrderDepthFirstTraversal.Node(8);
+            //n.left.left = new PostOrderDepthFirstTraversal.Node(2);
+            //n.right.right = new PostOrderDepthFirstTraversal.Node(9);
+            //n.left.right = new PostOrderDepthFirstTraversal.Node(6);
+            //n.right.left = new PostOrderDepthFirstTraversal.Node(7);
+            //n.left.left.left = new PostOrderDepthFirstTraversal.Node(1);
 
-            id.postorder(n);
+            //id.postorder(n);
+
+            //FindMiddelOfTheLinkedlist fm = new FindMiddelOfTheLinkedlist();
+            //fm.head = new FindMiddelOfTheLinkedlist.Node(1);
+            //FindMiddelOfTheLinkedlist.Node n1 = new FindMiddelOfTheLinkedlist.Node(2);
+            //fm.head.next = n1;
+            //FindMiddelOfTheLinkedlist.Node n2 = new FindMiddelOfTheLinkedlist.Node(3);
+            //n1.next = n2;
+            //FindMiddelOfTheLinkedlist.Node n3 = new FindMiddelOfTheLinkedlist.Node(4);
+            //n2.next = n3;
+            //FindMiddelOfTheLinkedlist.Node n4 = new FindMiddelOfTheLinkedlist.Node(5);
+            //n3.next = n4;
+            //FindMiddelOfTheLinkedlist.Node n5 = new FindMiddelOfTheLinkedlist.Node(6);
+            //n4.next = n5;
+
+            //fm.printList(fm.head);
+
+            //Console.WriteLine("The middle of linked list is " + fm.findmiddle(fm.head));
 
 
 
+            RotateLinkedListClockwise rl = new RotateLinkedListClockwise();
+            rl.head = new RotateLinkedListClockwise.Node(10);
+            RotateLinkedListClockwise.Node n1 = new RotateLinkedListClockwise.Node(20);
+            rl.head.next = n1;
+            RotateLinkedListClockwise.Node n2 = new RotateLinkedListClockwise.Node(30);
+            n1.next = n2;
+            RotateLinkedListClockwise.Node n3 = new RotateLinkedListClockwise.Node(40);
+            n2.next = n3;
+            RotateLinkedListClockwise.Node n4 = new RotateLinkedListClockwise.Node(50);
+            n3.next = n4;
+            RotateLinkedListClockwise.Node n5 = new RotateLinkedListClockwise.Node(60);
+            n4.next = n5;
+
+            rl.printList(rl.head);
+            rl.rotateclockwise(rl.head,4);
+
+            Console.WriteLine("Clockwise rotating linked list:");
+            rl.printList(rl.head);
 
 
 
-
-
+            Console.ReadLine();
 
         }
     }
