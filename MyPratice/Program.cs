@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using System.Collections.Generic;
-
+using System.Net.Http.Headers;
 
 namespace MyPratice
 {
@@ -440,24 +440,111 @@ namespace MyPratice
 
 
 
-            RotateLinkedListClockwise rl = new RotateLinkedListClockwise();
-            rl.head = new RotateLinkedListClockwise.Node(10);
-            RotateLinkedListClockwise.Node n1 = new RotateLinkedListClockwise.Node(20);
-            rl.head.next = n1;
-            RotateLinkedListClockwise.Node n2 = new RotateLinkedListClockwise.Node(30);
-            n1.next = n2;
-            RotateLinkedListClockwise.Node n3 = new RotateLinkedListClockwise.Node(40);
-            n2.next = n3;
-            RotateLinkedListClockwise.Node n4 = new RotateLinkedListClockwise.Node(50);
-            n3.next = n4;
-            RotateLinkedListClockwise.Node n5 = new RotateLinkedListClockwise.Node(60);
-            n4.next = n5;
+            //RotateLinkedListClockwise rl = new RotateLinkedListClockwise();
+            //rl.head = new RotateLinkedListClockwise.Node(10);
+            //RotateLinkedListClockwise.Node n1 = new RotateLinkedListClockwise.Node(20);
+            //rl.head.next = n1;
+            //RotateLinkedListClockwise.Node n2 = new RotateLinkedListClockwise.Node(30);
+            //n1.next = n2;
+            //RotateLinkedListClockwise.Node n3 = new RotateLinkedListClockwise.Node(40);
+            //n2.next = n3;
+            //RotateLinkedListClockwise.Node n4 = new RotateLinkedListClockwise.Node(50);
+            //n3.next = n4;
+            //RotateLinkedListClockwise.Node n5 = new RotateLinkedListClockwise.Node(60);
+            //n4.next = n5;
 
-            rl.printList(rl.head);
-            rl.rotateclockwise(rl.head,4);
+            //rl.printList(rl.head);
+            //rl.rotateclockwise(rl.head,4);
 
-            Console.WriteLine("Clockwise rotating linked list:");
-            rl.printList(rl.head);
+            //Console.WriteLine("Clockwise rotating linked list:");
+            //rl.printList(rl.head);
+
+            //Circularlinkedlist cl = new Circularlinkedlist();
+            //cl.head = new Circularlinkedlist.Node(10);
+            //Circularlinkedlist.Node n1 = new Circularlinkedlist.Node(20);
+            //cl.head.next = n1;
+            //Circularlinkedlist.Node n2 = new Circularlinkedlist.Node(30);
+            //n1.next = n2;
+            //Circularlinkedlist.Node n3 = new Circularlinkedlist.Node(40);
+            //n2.next = n3;
+            //Circularlinkedlist.Node n4 = new Circularlinkedlist.Node(50);
+            //n3.next = n4;
+            //n4.next = n2;
+
+
+
+
+            //Console.WriteLine(cl.IsCircular(cl.head));
+
+            //ReverseLinkedList reverse = new ReverseLinkedList();
+            //reverse.head = new ReverseLinkedList.Node(1);
+            //ReverseLinkedList.Node n1 = new ReverseLinkedList.Node(2);
+            //reverse.head.next = n1;
+            //ReverseLinkedList.Node n2 = new ReverseLinkedList.Node(3);
+            //n1.next = n2;
+            //ReverseLinkedList.Node n3 = new ReverseLinkedList.Node(4);
+            //n2.next = n3;
+            //ReverseLinkedList.Node n4 = new ReverseLinkedList.Node(5);
+            //n3.next = n4;
+            //ReverseLinkedList.Node n5 = new ReverseLinkedList.Node(6);
+            //n4.next = n5;
+            //ReverseLinkedList.Node n6 = new ReverseLinkedList.Node(7);
+            //n5.next = n6;
+            //ReverseLinkedList.Node n7 = new ReverseLinkedList.Node(8);
+            //n6.next = n7;
+
+
+            //reverse.printlist(reverse.head);
+            //reverse.reverselist(reverse.head, 3);
+            //Console.WriteLine("Reverse linked list:");
+
+            //reverse.printlist(reverse.head);
+
+            // findlength fl = new findlength();
+            //// Console.WriteLine(fl.findarraylength());
+
+            // fl.head = new findlength.Node(1);
+            // findlength.Node n1 = new findlength.Node(2);
+            // fl.head = n1;
+            // findlength.Node n2 = new findlength.Node(3);
+            // n1.next = n2;
+
+            // Console.WriteLine(fl.findlinkedlistlength(fl.head));
+
+            //Findnthnode fn = new Findnthnode();
+            //fn.head = new Findnthnode.Node(21);
+            //Findnthnode.Node n1 = new Findnthnode.Node(22);
+            //fn.head.next = n1;
+            //Findnthnode.Node n2 = new Findnthnode.Node(23);
+            //n1.next = n2;
+            //Findnthnode.Node n3 = new Findnthnode.Node(24);
+            //n2.next = n3;
+            //Findnthnode.Node n4 = new Findnthnode.Node(25);
+            //n3.next = n4;
+
+            //Console.WriteLine(fn.findnthNode(fn.head, 3));
+
+
+
+            MergeLinkedList ml1 = new MergeLinkedList();
+            MergeLinkedList ml2 = new MergeLinkedList();
+
+            ml1.head = new MergeLinkedList.Node(1);
+            MergeLinkedList.Node n1 = new MergeLinkedList.Node(4);
+            ml1.head.next = n1;
+            MergeLinkedList.Node n3 = new MergeLinkedList.Node(5);
+            n1.next = n3;
+
+            ml2.head = new MergeLinkedList.Node(2);
+            MergeLinkedList.Node n2 = new MergeLinkedList.Node(3);
+            ml2.head.next = n2;
+
+            MergeLinkedList ml = new MergeLinkedList();
+            ml.mergedlinkedlist(ml1.head, ml2.head);
+            //ml.printlist(ml.head);
+
+
+
 
 
 

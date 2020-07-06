@@ -9,29 +9,68 @@ namespace MyPratice
     class ReverseLinkedList
     {
 
-        //public Node head;
-        
-        
+        public Node head;
 
-        //public int reverselist(Node head)
-        //{
-        //    if (head == null || head.next == null)
-        //        return head;
+        public class Node
+        {
+            public int value;
+            public Node next;
+          
 
-        //    var p = 0;
+            public Node(int v)
+            {
+                value = v;
+                next = null;
+            }
+        }
 
-        //    while(head!=null)
-        //    {
-        //        var c = head;
-        //        head = head.next;
-        //        c.next = p;
-        //        p = c;
 
-        //    }
 
-        //    return p;
+        public Node reverselist(Node n,int k)
+        {
+           if(head == null || head.next == null)
+            {
+                return head;
+            }
+
+            int count = 0;
+            Node previous=null;
+            Node next = null;
+            Node current = head;
+
+            while (count < k && n != null)
+                {
+                    next = current.next;
+                    current.next = previous;
+                    previous = current;
+                    current = next;
+                    count++;
+                }
+
+           
+                head = previous;
+            return previous;
+         }
+
+                
             
-        //}
-        
+        public void printlist(Node n)
+        {
+            if(head == null || head.next == null)
+            {
+                Console.WriteLine("list is empty");
+            }
+
+            while(n != null)
+            {
+                Console.WriteLine(n.value);
+                n = n.next;
+            }
+        }
+
     }
 }
+
+
+// Time: O(n)
+// space O(n)

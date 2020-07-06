@@ -47,7 +47,7 @@ namespace MyPratice
 
             if( n == null)
             {
-                return;
+                Console.WriteLine("Head is null");
             }
 
             Node kthNode = n;

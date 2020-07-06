@@ -8,11 +8,11 @@ namespace Daily_Coding_Problem
     {
         public class Node
         {
-            public int value;
+            public string value;
             public Node left;
             public Node right;
 
-            public Node(int v)
+            public Node(string v)
             {
                 value = v;
                 left = null;
@@ -20,17 +20,34 @@ namespace Daily_Coding_Problem
             }
         }
 
-        public void serialize(Node root)
+        public string serialize(Node root)
         {
+            
+
             if(root == null)
             {
-                Console.WriteLine("Tree is empty");
+                //Console.WriteLine("Tree is empty");
+                return "";
             }
 
 
+            //Console.WriteLine(root.value);
+
+            if (root.left != null)
+            {
+                serialize(root.left);
+            }
+
+            if (root.right != null)
+            {
+                serialize(root.right);
+            }
+
+            return root.value + serialize(root.left) + serialize(root.right);
+            
         }
 
-        public void deserialize()
+        public void deserialize(string v)
         {
            
 

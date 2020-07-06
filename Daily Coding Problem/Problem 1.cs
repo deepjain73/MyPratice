@@ -11,7 +11,7 @@ namespace Daily_Coding_Problem
         public bool Findsum(int[] s)
         {
             int k = 17;
-            var c = 0;
+            //var c = 0;
 
             if (s.Length == 0 || s == null)
                 return false;

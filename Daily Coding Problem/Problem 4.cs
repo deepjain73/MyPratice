@@ -41,34 +41,33 @@ namespace Daily_Coding_Problem
 
         public void findpositiveint()
         {
+            int[] v = new int[] { 3, 4, -1, 1 };
+            selectionsort(v);
+
+            for(int j = 0; j<v.Length; j++)
+            {
+
+            }
+            
+
+            //int[] s = new int[] { 3, 4, -1,1 };
+            //selectionsort(s);
+
+            //Boolean bfound = false;
+            //int Exceptedsum; int l = s[0];
+
             //for (int k = 0; k < s.Length; k++)
             //{
-            //    if (s[k] != k + 1)
+            //    Exceptedsum = l + k;
+            //    if (Exceptedsum != s[k])
             //    {
-
-            //        Console.WriteLine(k + 1);
+            //        bfound = true;
+            //        Console.WriteLine($"Missing positive Number is  { Exceptedsum}");
+            //        break;
             //    }
             //}
-
-            //Console.WriteLine(s.Length + 1);
-            int[] s = new int[] { 3, 4, -1,1 };
-            selectionsort(s);
-
-            Boolean bfound = false;
-            int Exceptedsum; int l = s[0];
-
-            for (int k = 0; k < s.Length; k++)
-            {
-                Exceptedsum = l + k;
-                if (Exceptedsum != s[k])
-                {
-                    bfound = true;
-                    Console.WriteLine($"Missing positive Number is  { Exceptedsum}");
-                    break;
-                }
-            }
-            if (bfound == false)
-                Console.WriteLine("No missing positive number");
+            //if (bfound == false)
+            //    Console.WriteLine("No missing positive number");
         }
     }
 }
