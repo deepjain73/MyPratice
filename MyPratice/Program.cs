@@ -546,8 +546,8 @@ namespace MyPratice
 
 
 
-            //FlattenLinkedList fl = new FlattenLinkedList();
-            //fl.
+            FlattenLinkedList fl = new FlattenLinkedList();
+            fl.
 
             //SwapPairwise sp = new SwapPairwise();
             //sp.head = new SwapPairwise.Node(1);
@@ -579,18 +579,20 @@ namespace MyPratice
             //sl.sumoflist(sl1.head, sl2.head);
             //sl.printlist(sl.head);
 
-            IsPalindromeLinkedlist ip = new IsPalindromeLinkedlist();
-            ip.head = new IsPalindromeLinkedlist.Node(1);
-            IsPalindromeLinkedlist.Node n1 = new IsPalindromeLinkedlist.Node(2);
-            ip.head.next = n1;
-            IsPalindromeLinkedlist.Node n2 = new IsPalindromeLinkedlist.Node(3);
-            n1.next = n2;
-            IsPalindromeLinkedlist.Node n3 = new IsPalindromeLinkedlist.Node(2);
-            n2.next = n3;
-            IsPalindromeLinkedlist.Node n4 = new IsPalindromeLinkedlist.Node(1);
-            n3.next = n4;
+            //IsPalindromeLinkedlist ip = new IsPalindromeLinkedlist();
+            //ip.head = new IsPalindromeLinkedlist.Node(1);
+            //IsPalindromeLinkedlist.Node n1 = new IsPalindromeLinkedlist.Node(2);
+            //ip.head.next = n1;
+            //IsPalindromeLinkedlist.Node n2 = new IsPalindromeLinkedlist.Node(3);
+            //n1.next = n2;
+            //IsPalindromeLinkedlist.Node n3 = new IsPalindromeLinkedlist.Node(2);
+            //n2.next = n3;
+            //IsPalindromeLinkedlist.Node n4 = new IsPalindromeLinkedlist.Node(1);
+            //n3.next = n4;
 
-            Console.WriteLine(ip.isPalindrome(ip.head));
+            //Console.WriteLine(ip.isPalindrome(ip.head));
+
+
 
             Console.ReadLine();
 
