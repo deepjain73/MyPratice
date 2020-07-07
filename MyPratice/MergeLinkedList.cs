@@ -22,53 +22,70 @@ namespace MyPratice
             }
         }
 
-        public void mergedlinkedlist(Node n,Node tmp)
+        public void mergedlinkedlist(Node l1,Node l2)
         {
             //if (head == null || head.next == null)
             //{
             //    return;
             //}
-            var head = n;
+            //var head = n;
 
-            if (n == null)
+            if (l1 == null)
             {
-                Console.WriteLine (tmp);
+                Console.WriteLine (l2);
             }
                 
-            if(tmp == null)
+            if(l2 == null)
             {
-                Console.WriteLine( n);
-            }
-
-
-
-       
-            while (n != null || tmp != null)
-            {
-                if(n == null)
-                {
-                   
-                    break;
-                }
-                if(tmp.next == null)
-                {
-                    tmp.next = n.next;
-                    break;
-                }
-                if (n.next.data > tmp.data)
-                {
-                    Node newtmp = n.next;
-                    n.next = tmp;
-                    tmp = newtmp;
-                    
-                }
-                else                    
-                    tmp = tmp.next;
-
+                Console.WriteLine(l1);
             }
 
             
+            if(l1.data < l2.data)
+            {
+                head = l1;
+            }
+            else
+            {
+                head = l2;
+                l2 = l1;
+                l1 = head;
+            }
+       
+            while (l1 != null && l2 != null)
+            {
+                //if(n == null)
+                //{
+                   
+                //    break;
+                //}
+                //if(tmp.next == null)
+                //{
+                //    tmp.next = n.next;
+                //    break;
+                //}
 
+                if (l1.next.data > l2.data)
+                {
+                    Node tmp = l2.next;
+                    Node newtmp = l1.next;
+                    l1.next = l2;
+                    l2.next = newtmp;
+
+                    if(l2.next != null)
+                    {
+                        l2 = tmp;
+                    }
+
+                }
+                else
+                {
+                    l1 = l1.next;
+                }
+
+            }
+
+      
             while (head != null)
             {
                 Console.WriteLine(head.data);

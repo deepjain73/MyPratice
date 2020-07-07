@@ -526,27 +526,71 @@ namespace MyPratice
 
 
 
-            MergeLinkedList ml1 = new MergeLinkedList();
-            MergeLinkedList ml2 = new MergeLinkedList();
+            //MergeLinkedList ml1 = new MergeLinkedList();
+            //MergeLinkedList ml2 = new MergeLinkedList();
 
-            ml1.head = new MergeLinkedList.Node(1);
-            MergeLinkedList.Node n1 = new MergeLinkedList.Node(4);
-            ml1.head.next = n1;
-            MergeLinkedList.Node n3 = new MergeLinkedList.Node(5);
-            n1.next = n3;
+            //ml1.head = new MergeLinkedList.Node(10);
+            //MergeLinkedList.Node n1 = new MergeLinkedList.Node(20);
+            //ml1.head.next = n1;
+            //MergeLinkedList.Node n3 = new MergeLinkedList.Node(30);
+            //n1.next = n3;
 
-            ml2.head = new MergeLinkedList.Node(2);
-            MergeLinkedList.Node n2 = new MergeLinkedList.Node(3);
-            ml2.head.next = n2;
+            //ml2.head = new MergeLinkedList.Node(15);
+            //MergeLinkedList.Node n2 = new MergeLinkedList.Node(17);
+            //ml2.head.next = n2;
 
-            MergeLinkedList ml = new MergeLinkedList();
-            ml.mergedlinkedlist(ml1.head, ml2.head);
-            //ml.printlist(ml.head);
-
-
+            //MergeLinkedList ml = new MergeLinkedList();
+            //ml.mergedlinkedlist(ml1.head, ml2.head);
+            ////ml.printlist(ml.head);
 
 
 
+
+            //FlattenLinkedList fl = new FlattenLinkedList();
+            //fl.
+
+            //SwapPairwise sp = new SwapPairwise();
+            //sp.head = new SwapPairwise.Node(1);
+            //SwapPairwise.Node n = new SwapPairwise.Node(2);
+            //sp.head.next = n;
+            //SwapPairwise.Node n1 = new SwapPairwise.Node(3);
+            //n.next = n1;
+            //SwapPairwise.Node n2 = new SwapPairwise.Node(4);
+            //n1.next = n2;
+            //SwapPairwise.Node n3 = new SwapPairwise.Node(5);
+            //n2.next = n3;
+
+            //sp.swappairwise(sp.head);
+            //sp.printlist(sp.head);
+
+            //ReturnSumList sl1 = new ReturnSumList();
+            //sl1.head = new ReturnSumList.Node(90);
+            //ReturnSumList.Node n1 = new ReturnSumList.Node(9);
+            //sl1.head.next = n1;
+
+            //ReturnSumList sl2 = new ReturnSumList();
+            //sl2.head = new ReturnSumList.Node(90);
+            //ReturnSumList.Node n2 = new ReturnSumList.Node(4);
+            //sl2.head.next = n2;
+            //ReturnSumList.Node n3 = new ReturnSumList.Node(3);
+            //n2.next = n3;
+
+            //ReturnSumList sl = new ReturnSumList();
+            //sl.sumoflist(sl1.head, sl2.head);
+            //sl.printlist(sl.head);
+
+            IsPalindromeLinkedlist ip = new IsPalindromeLinkedlist();
+            ip.head = new IsPalindromeLinkedlist.Node(1);
+            IsPalindromeLinkedlist.Node n1 = new IsPalindromeLinkedlist.Node(2);
+            ip.head.next = n1;
+            IsPalindromeLinkedlist.Node n2 = new IsPalindromeLinkedlist.Node(3);
+            n1.next = n2;
+            IsPalindromeLinkedlist.Node n3 = new IsPalindromeLinkedlist.Node(2);
+            n2.next = n3;
+            IsPalindromeLinkedlist.Node n4 = new IsPalindromeLinkedlist.Node(1);
+            n3.next = n4;
+
+            Console.WriteLine(ip.isPalindrome(ip.head));
 
             Console.ReadLine();
 
