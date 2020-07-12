@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 using System.Text;
 
 namespace MyPratice
@@ -18,7 +19,11 @@ namespace MyPratice
                 data = d;
                 next = null;
             }
-
         }
+
+
+        
+            
+          
     }
 }

@@ -27,7 +27,7 @@ namespace MyPratice
             int carry = 0;
             int sum = 0;
 
-            while (n2 != null || n2 != null)
+            while (n1 != null || n2 != null)
             {
                 if (n1 == null)
                 {

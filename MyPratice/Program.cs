@@ -454,7 +454,7 @@ namespace MyPratice
             //n4.next = n5;
 
             //rl.printList(rl.head);
-            //rl.rotateclockwise(rl.head,4);
+            //rl.rotateclockwise(rl.head, 4);
 
             //Console.WriteLine("Clockwise rotating linked list:");
             //rl.printList(rl.head);
@@ -469,36 +469,32 @@ namespace MyPratice
             //n2.next = n3;
             //Circularlinkedlist.Node n4 = new Circularlinkedlist.Node(50);
             //n3.next = n4;
-            //n4.next = n2;
-
-
-
-
+            //n4.next = n3;
             //Console.WriteLine(cl.IsCircular(cl.head));
 
-            //ReverseLinkedList reverse = new ReverseLinkedList();
-            //reverse.head = new ReverseLinkedList.Node(1);
-            //ReverseLinkedList.Node n1 = new ReverseLinkedList.Node(2);
-            //reverse.head.next = n1;
-            //ReverseLinkedList.Node n2 = new ReverseLinkedList.Node(3);
-            //n1.next = n2;
-            //ReverseLinkedList.Node n3 = new ReverseLinkedList.Node(4);
-            //n2.next = n3;
-            //ReverseLinkedList.Node n4 = new ReverseLinkedList.Node(5);
-            //n3.next = n4;
-            //ReverseLinkedList.Node n5 = new ReverseLinkedList.Node(6);
-            //n4.next = n5;
-            //ReverseLinkedList.Node n6 = new ReverseLinkedList.Node(7);
-            //n5.next = n6;
-            //ReverseLinkedList.Node n7 = new ReverseLinkedList.Node(8);
-            //n6.next = n7;
+            ReverseLinkedList reverse = new ReverseLinkedList();
+            reverse.head = new ReverseLinkedList.Node(1);
+            ReverseLinkedList.Node n1 = new ReverseLinkedList.Node(2);
+            reverse.head.next = n1;
+            ReverseLinkedList.Node n2 = new ReverseLinkedList.Node(3);
+            n1.next = n2;
+            ReverseLinkedList.Node n3 = new ReverseLinkedList.Node(4);
+            n2.next = n3;
+            ReverseLinkedList.Node n4 = new ReverseLinkedList.Node(5);
+            n3.next = n4;
+            ReverseLinkedList.Node n5 = new ReverseLinkedList.Node(6);
+            n4.next = n5;
+            ReverseLinkedList.Node n6 = new ReverseLinkedList.Node(7);
+            n5.next = n6;
+            ReverseLinkedList.Node n7 = new ReverseLinkedList.Node(8);
+            n6.next = n7;
 
 
-            //reverse.printlist(reverse.head);
-            //reverse.reverselist(reverse.head, 3);
-            //Console.WriteLine("Reverse linked list:");
+            reverse.printlist(reverse.head);
+            reverse.head = reverse.reverselist(reverse.head, 3);
+            Console.WriteLine("Reverse linked list:");
 
-            //reverse.printlist(reverse.head);
+            reverse.printlist(reverse.head);
 
             // findlength fl = new findlength();
             //// Console.WriteLine(fl.findarraylength());
@@ -522,7 +518,7 @@ namespace MyPratice
             //Findnthnode.Node n4 = new Findnthnode.Node(25);
             //n3.next = n4;
 
-            //Console.WriteLine(fn.findnthNode(fn.head, 3));
+            //Console.WriteLine(fn.findnthNode(fn.head, 2));
 
 
 
@@ -546,8 +542,8 @@ namespace MyPratice
 
 
 
-            FlattenLinkedList fl = new FlattenLinkedList();
-            fl.
+            //FlattenLinkedList fl = new FlattenLinkedList();
+
 
             //SwapPairwise sp = new SwapPairwise();
             //sp.head = new SwapPairwise.Node(1);
@@ -564,12 +560,12 @@ namespace MyPratice
             //sp.printlist(sp.head);
 
             //ReturnSumList sl1 = new ReturnSumList();
-            //sl1.head = new ReturnSumList.Node(90);
-            //ReturnSumList.Node n1 = new ReturnSumList.Node(9);
+            //sl1.head = new ReturnSumList.Node(5);
+            //ReturnSumList.Node n1 = new ReturnSumList.Node(4);
             //sl1.head.next = n1;
 
             //ReturnSumList sl2 = new ReturnSumList();
-            //sl2.head = new ReturnSumList.Node(90);
+            //sl2.head = new ReturnSumList.Node(5);
             //ReturnSumList.Node n2 = new ReturnSumList.Node(4);
             //sl2.head.next = n2;
             //ReturnSumList.Node n3 = new ReturnSumList.Node(3);
@@ -577,7 +573,7 @@ namespace MyPratice
 
             //ReturnSumList sl = new ReturnSumList();
             //sl.sumoflist(sl1.head, sl2.head);
-            //sl.printlist(sl.head);
+            ////sl.printlist(sl.head);
 
             //IsPalindromeLinkedlist ip = new IsPalindromeLinkedlist();
             //ip.head = new IsPalindromeLinkedlist.Node(1);

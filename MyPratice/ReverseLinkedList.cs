@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Net.Http.Headers;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
@@ -28,38 +29,66 @@ namespace MyPratice
 
         public Node reverselist(Node n,int k)
         {
-           if(head == null || head.next == null)
-            {
-                return head;
-            }
+           //if(head == null || head.next == null)
+           // {
+           //     return head;
+           // }
 
             int count = 0;
-            Node previous=null;
+            Node previous = null;
             Node next = null;
-            Node current = head;
+            Node current = n;
+           // int i = 0;
+            //Node last = null;
 
-            while (count < k && n != null)
-                {
-                    next = current.next;
-                    current.next = previous;
-                    previous = current;
-                    current = next;
-                    count++;
-                }
+            while (count < k && current != null)
+            {
+                next = current.next;
+                current.next = previous;
+                previous = current;
+                current = next;
+                count++;
+            }
 
-           
-                head = previous;
+            if (next != null)
+            {
+                n.next = reverselist(next, k);
+            }
+
             return previous;
-         }
 
-                
-            
+            //    if (count == 0)
+            //    {
+            //        last = current;
+            //    }
+            //    if (count == k)
+            //    {
+            //        if (i == 0)
+            //        {
+            //            head = previous;
+            //            last = current;
+
+            //        }
+            //        i++;
+            //        count = 0;
+            //    }
+            //}
+        }
+
+
+
+
+
+
+
+
+
         public void printlist(Node n)
         {
-            if(head == null || head.next == null)
-            {
-                Console.WriteLine("list is empty");
-            }
+            //if(head == null || head.next == null)
+            //{
+            //    Console.WriteLine("list is empty");
+            //}
 
             while(n != null)
             {
