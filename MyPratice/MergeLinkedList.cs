@@ -13,12 +13,14 @@ namespace MyPratice
         {
             public int data;
             public Node next;
+            public Node bottom;
 
 
             public Node(int d)
             {
                 data = d;
                 next = null;
+                bottom = null;
             }
         }
 
@@ -92,7 +94,17 @@ namespace MyPratice
                 head = head.next;
             }
 
+            //if (a.data < b.data)
+            //{
+            //    a.next = mergelist(a.next, b);
+            //    return a;
+            //}
 
+            //else
+            //{
+            //    b.next = mergelist(a, b.next);
+            //    return b;
+            //}
         }
 
         //public void printlist(Node n)

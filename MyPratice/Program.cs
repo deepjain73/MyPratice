@@ -472,29 +472,29 @@ namespace MyPratice
             //n4.next = n3;
             //Console.WriteLine(cl.IsCircular(cl.head));
 
-            ReverseLinkedList reverse = new ReverseLinkedList();
-            reverse.head = new ReverseLinkedList.Node(1);
-            ReverseLinkedList.Node n1 = new ReverseLinkedList.Node(2);
-            reverse.head.next = n1;
-            ReverseLinkedList.Node n2 = new ReverseLinkedList.Node(3);
-            n1.next = n2;
-            ReverseLinkedList.Node n3 = new ReverseLinkedList.Node(4);
-            n2.next = n3;
-            ReverseLinkedList.Node n4 = new ReverseLinkedList.Node(5);
-            n3.next = n4;
-            ReverseLinkedList.Node n5 = new ReverseLinkedList.Node(6);
-            n4.next = n5;
-            ReverseLinkedList.Node n6 = new ReverseLinkedList.Node(7);
-            n5.next = n6;
-            ReverseLinkedList.Node n7 = new ReverseLinkedList.Node(8);
-            n6.next = n7;
+            //ReverseLinkedList reverse = new ReverseLinkedList();
+            //reverse.head = new ReverseLinkedList.Node(1);
+            //ReverseLinkedList.Node n1 = new ReverseLinkedList.Node(2);
+            //reverse.head.next = n1;
+            //ReverseLinkedList.Node n2 = new ReverseLinkedList.Node(3);
+            //n1.next = n2;
+            //ReverseLinkedList.Node n3 = new ReverseLinkedList.Node(4);
+            //n2.next = n3;
+            //ReverseLinkedList.Node n4 = new ReverseLinkedList.Node(5);
+            //n3.next = n4;
+            //ReverseLinkedList.Node n5 = new ReverseLinkedList.Node(6);
+            //n4.next = n5;
+            //ReverseLinkedList.Node n6 = new ReverseLinkedList.Node(7);
+            //n5.next = n6;
+            //ReverseLinkedList.Node n7 = new ReverseLinkedList.Node(8);
+            //n6.next = n7;
 
 
-            reverse.printlist(reverse.head);
-            reverse.head = reverse.reverselist(reverse.head, 3);
-            Console.WriteLine("Reverse linked list:");
+            //reverse.printlist(reverse.head);
+            //reverse.head = reverse.reverselist(reverse.head, 3);
+            //Console.WriteLine("Reverse linked list:");
 
-            reverse.printlist(reverse.head);
+            //reverse.printlist(reverse.head);
 
             // findlength fl = new findlength();
             //// Console.WriteLine(fl.findarraylength());
@@ -541,8 +541,83 @@ namespace MyPratice
 
 
 
-
             //FlattenLinkedList fl = new FlattenLinkedList();
+            //fl.head = fl.addNode(fl.head, 30);
+            //fl.head = fl.addNode(fl.head, 8);
+            //fl.head = fl.addNode(fl.head, 7);
+            //fl.head = fl.addNode(fl.head, 5);
+
+            //fl.head.next = fl.addNode(fl.head, 20);
+            //fl.head.next = fl.addNode(fl.head, 10);
+
+            //fl.head.next.next = fl.addNode(fl.head, 50);
+            //fl.head.next.next = fl.addNode(fl.head, 22);
+            //fl.head.next.next = fl.addNode(fl.head, 19);
+
+            //fl.head.next.next.next = fl.addNode(fl.head, 45);
+            //fl.head.next.next.next = fl.addNode(fl.head, 40);
+            //fl.head.next.next.next = fl.addNode(fl.head, 35);
+            //fl.head.next.next.next = fl.addNode(fl.head, 28);
+
+
+            //fl.head = fl.flattenlist(fl.head);
+            //fl.printlist(fl.head);
+
+            FlattenLinkedList fl1 = new FlattenLinkedList();
+            fl1.head = new FlattenLinkedList.Node(5);
+            FlattenLinkedList.Node n1 = new FlattenLinkedList.Node(10);
+            fl1.head.next = n1;
+            FlattenLinkedList.Node n2 = new FlattenLinkedList.Node(19);
+            n1.next = n2;
+            FlattenLinkedList.Node n3 = new FlattenLinkedList.Node(28);
+            n2.next = n3;
+
+            FlattenLinkedList fl2 = new FlattenLinkedList();
+            fl2.head = new FlattenLinkedList.Node(7);
+            fl1.head.bottom = fl2.head;
+            FlattenLinkedList.Node f1 = new FlattenLinkedList.Node(20);
+            fl2.head.next = f1;
+            FlattenLinkedList.Node f2 = new FlattenLinkedList.Node(22);
+            f1.next = f2;
+            FlattenLinkedList.Node f3 = new FlattenLinkedList.Node(35);
+            f2.next = f3;
+
+            FlattenLinkedList fl3 = new FlattenLinkedList();
+            fl3.head = new FlattenLinkedList.Node(8);
+            fl2.head.bottom = fl3.head;
+            FlattenLinkedList.Node g1 = new FlattenLinkedList.Node(40);
+            fl3.head.next = g1;
+            FlattenLinkedList.Node g2 = new FlattenLinkedList.Node(50);
+            g1.next = g2;
+
+            FlattenLinkedList fl4 = new FlattenLinkedList();
+            fl4.head = new FlattenLinkedList.Node(30);
+            fl3.head.bottom = fl4.head;
+            FlattenLinkedList.Node k1 = new FlattenLinkedList.Node(45);
+            fl4.head.next = k1;
+
+            FlattenLinkedList fl = new FlattenLinkedList();
+            //fl1.head = fl.mergelist(fl1.head,fl2.head);
+            //fl1.head = fl.mergelist(fl1.head, fl3.head);
+            //fl1.head = fl.mergelist(fl1.head, fl4.head);
+            //fl.printlistnew(fl1.head);
+
+            //var tmp = fl1.head.bottom;
+            //while(fl1.head.bottom !=null)
+            //{                
+            //    fl1.head = fl.mergelist(fl1.head, tmp);
+            //    if(tmp.bottom !=null)
+            //        tmp = tmp.bottom;
+            //}
+            //fl.printlistnew(fl1.head);
+
+            fl.flattenlist(fl1.head);
+
+
+
+
+
+
 
 
             //SwapPairwise sp = new SwapPairwise();
