@@ -563,40 +563,40 @@ namespace MyPratice
             //fl.head = fl.flattenlist(fl.head);
             //fl.printlist(fl.head);
 
-            FlattenLinkedList fl1 = new FlattenLinkedList();
-            fl1.head = new FlattenLinkedList.Node(5);
-            FlattenLinkedList.Node n1 = new FlattenLinkedList.Node(10);
-            fl1.head.next = n1;
-            FlattenLinkedList.Node n2 = new FlattenLinkedList.Node(19);
-            n1.next = n2;
-            FlattenLinkedList.Node n3 = new FlattenLinkedList.Node(28);
-            n2.next = n3;
+            //FlattenLinkedList fl1 = new FlattenLinkedList();
+            //fl1.head = new FlattenLinkedList.Node(5);
+            //FlattenLinkedList.Node n1 = new FlattenLinkedList.Node(10);
+            //fl1.head.next = n1;
+            //FlattenLinkedList.Node n2 = new FlattenLinkedList.Node(19);
+            //n1.next = n2;
+            //FlattenLinkedList.Node n3 = new FlattenLinkedList.Node(28);
+            //n2.next = n3;
 
-            FlattenLinkedList fl2 = new FlattenLinkedList();
-            fl2.head = new FlattenLinkedList.Node(7);
-            fl1.head.bottom = fl2.head;
-            FlattenLinkedList.Node f1 = new FlattenLinkedList.Node(20);
-            fl2.head.next = f1;
-            FlattenLinkedList.Node f2 = new FlattenLinkedList.Node(22);
-            f1.next = f2;
-            FlattenLinkedList.Node f3 = new FlattenLinkedList.Node(35);
-            f2.next = f3;
+            //FlattenLinkedList fl2 = new FlattenLinkedList();
+            //fl2.head = new FlattenLinkedList.Node(7);
+            //fl1.head.bottom = fl2.head;
+            //FlattenLinkedList.Node f1 = new FlattenLinkedList.Node(20);
+            //fl2.head.next = f1;
+            //FlattenLinkedList.Node f2 = new FlattenLinkedList.Node(22);
+            //f1.next = f2;
+            //FlattenLinkedList.Node f3 = new FlattenLinkedList.Node(35);
+            //f2.next = f3;
 
-            FlattenLinkedList fl3 = new FlattenLinkedList();
-            fl3.head = new FlattenLinkedList.Node(8);
-            fl2.head.bottom = fl3.head;
-            FlattenLinkedList.Node g1 = new FlattenLinkedList.Node(40);
-            fl3.head.next = g1;
-            FlattenLinkedList.Node g2 = new FlattenLinkedList.Node(50);
-            g1.next = g2;
+            //FlattenLinkedList fl3 = new FlattenLinkedList();
+            //fl3.head = new FlattenLinkedList.Node(8);
+            //fl2.head.bottom = fl3.head;
+            //FlattenLinkedList.Node g1 = new FlattenLinkedList.Node(40);
+            //fl3.head.next = g1;
+            //FlattenLinkedList.Node g2 = new FlattenLinkedList.Node(50);
+            //g1.next = g2;
 
-            FlattenLinkedList fl4 = new FlattenLinkedList();
-            fl4.head = new FlattenLinkedList.Node(30);
-            fl3.head.bottom = fl4.head;
-            FlattenLinkedList.Node k1 = new FlattenLinkedList.Node(45);
-            fl4.head.next = k1;
+            //FlattenLinkedList fl4 = new FlattenLinkedList();
+            //fl4.head = new FlattenLinkedList.Node(30);
+            //fl3.head.bottom = fl4.head;
+            //FlattenLinkedList.Node k1 = new FlattenLinkedList.Node(45);
+            //fl4.head.next = k1;
 
-            FlattenLinkedList fl = new FlattenLinkedList();
+            //FlattenLinkedList fl = new FlattenLinkedList();
             //fl1.head = fl.mergelist(fl1.head,fl2.head);
             //fl1.head = fl.mergelist(fl1.head, fl3.head);
             //fl1.head = fl.mergelist(fl1.head, fl4.head);
@@ -611,7 +611,7 @@ namespace MyPratice
             //}
             //fl.printlistnew(fl1.head);
 
-            fl.flattenlist(fl1.head);
+            //fl.flattenlist(fl1.head);
 
 
 
@@ -665,7 +665,7 @@ namespace MyPratice
 
 
 
-            Console.ReadLine();
+            //Console.ReadLine();
 
         }
     }
