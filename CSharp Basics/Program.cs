@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace CSharp_Basics
 {
@@ -173,7 +174,7 @@ namespace CSharp_Basics
             //var studentgrades = new List<int>();
             //var adding = true;
 
-            //while(adding)
+            //while (adding)
             //{
             //    Console.WriteLine("Name of the student:");
             //    studentnames.Add(Console.ReadLine());
@@ -181,46 +182,64 @@ namespace CSharp_Basics
             //    studentgrades.Add(int.Parse(Console.ReadLine()));
 
             //    Console.WriteLine("Do you want to add more student? y/n");
-            //    if(Console.ReadLine() != "y")
+            //    if (Console.ReadLine() != "y")
             //    {
             //        adding = false;
             //    }
             //}
 
-            //for(int i = 0; i < studentgrades.Count; i++)
+            //for (int i = 0; i < studentgrades.Count; i++)
             //{
             //    Console.WriteLine("Student name is {0} and grade is {1}", studentnames[i], studentgrades[i]);
             //}
 
+            Import();
+            teaches();
             var student = new List<Student>();
+            
             var adding = true;
 
-            while(adding)
+            while (adding)
             {
+                //Student newstudent = new Student("test",0,"28/7/2007",89,"34st");
+                //Console.Write("Name of the student:");
+                //newstudent.name = Console.ReadLine();
+
                 Student newstudent = new Student();
-                Console.Write("Name of the student:");
-                newstudent.name = Console.ReadLine();
+                Teacher newteacher = new Teacher();
 
-                Console.Write("Grade of the student:");
-                int grade = -1;
-                while(!int.TryParse(Console.ReadLine(), out grade))
-                {
-                    Console.WriteLine("Please input proper value for grade... :");
-                }
-                newstudent.grade = grade;
+                newstudent.name = Util.Console.Askquestion("Name of the student:");
+                newteacher.subject = Util.Console.Askquestion("Subject:");
 
-                Console.Write("Birthday of the student:");
-                newstudent.birthday = Console.ReadLine();
+                //Console.Write("Grade of the student:");
+                //int grade = -1;
+                //while(!int.TryParse(Console.ReadLine(), out grade))
+                //{
+                //    Console.WriteLine("Please input proper value for grade... :");
+                //}
+                //newstudent.grade = grade;
+                newstudent.grade = int.Parse(Util.Console.Askquestion("Grade of the student:"));
 
+                //Console.Write("Birthday of the student:");
+                //newstudent.birthday = Console.ReadLine();
+                newstudent.birthday = Util.Console.Askquestion("Birthday of the student:");
 
-                Console.Write("Address of the student:");
-                newstudent.address = Console.ReadLine();
+                //Console.Write("Address of the student:");
+                //newstudent.address = Console.ReadLine();
+                newstudent.address = Util.Console.Askquestion("Address of the student:");
 
-
-                Console.Write("Phone# of the student:");
-                newstudent.phone = int.Parse(Console.ReadLine());
+                //Console.Write("Phone# of the student:");
+                //int Phone = -1;
+                //while(!int.TryParse(Console.ReadLine(), out Phone))
+                //{
+                //    Console.WriteLine("Please input proper value for phone... :");
+                //}
+                //newstudent.Phone = Phone;
+                newstudent.Phone = int.Parse(Util.Console.Askquestion("Phone# of the student:"));
 
                 student.Add(newstudent);
+                Student.count++; // incrementing student count from class
+                Console.WriteLine("Student count:{0}", Student.count);
 
 
                 Console.WriteLine("Do you want to add more student? y/n");
@@ -232,10 +251,25 @@ namespace CSharp_Basics
 
             foreach (var item in student)
             {
-                Console.WriteLine("Student name is {0} and grade is {1}",item.name,item.grade);
+                Console.WriteLine("Student name is {0} and grade is {1}", item.name, item.grade);
             }
 
 
         }
+
+        public static void Import()
+        {
+            Student student1 = new Student("test", 0, "28/7/2007", 89, "34st");
+            Console.WriteLine(student1.name +" "+ student1.grade);
+        }
+
+        public static void teaches()
+        {
+            Teacher t1 = new Teacher("Maths");
+            Console.WriteLine(t1.subject);
+        }
+
+
+
     }
 }
