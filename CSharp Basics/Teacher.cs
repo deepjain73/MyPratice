@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharp_Basics
 {
-    public class Teacher : Inheriting
+    public class Teacher : Inheriting,IPayroll
     {
         public string subject;
 
@@ -16,6 +16,11 @@ namespace CSharp_Basics
         public Teacher()
         {
 
+        }
+
+        public void pay()
+        {
+            Console.WriteLine("Paying teacher");
         }
     }
 }
