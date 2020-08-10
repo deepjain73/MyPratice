@@ -4,6 +4,13 @@ using System.Text;
 
 namespace Util
 {
+    public static class Extensionsmethods
+    {
+        public static int toint(this string value) // this is reference variable that points to itself, or to its own object. string is data type
+        {
+            return int.Parse(value);
+        }
+    }
     class Console
     {
         public static string Askquestion(string question)
@@ -23,7 +30,7 @@ namespace Util
             try
             {
                 System.Console.Write(question);
-                return int.Parse(System.Console.ReadLine());
+                return System.Console.ReadLine().toint(); // toint is extension method
             }
             catch (Exception)
             {

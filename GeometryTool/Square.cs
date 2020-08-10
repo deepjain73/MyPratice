@@ -6,7 +6,18 @@ namespace GeometryTool
 {
     class Square : Shape
     {
-        public int Width;
+        private int Width;
+
+        public int MyWidth
+        {
+            get {
+                return Width;
+            }
+            set
+            {
+                Width = value;
+            }
+        }
 
         //public override getarea()
         //{
@@ -19,3 +30,4 @@ namespace GeometryTool
         }
     }
 }
+ 

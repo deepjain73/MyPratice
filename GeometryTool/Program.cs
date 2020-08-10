@@ -6,7 +6,8 @@ namespace GeometryTool
     {
         static void Main(string[] args)
         {
-            Square sq = new Square() { Width = 2 };
+            Square sq = new Square() { MyWidth = 2 };
+            
             Triangle tr = new Triangle() { Base = 3, Heigth = 5 };
             //Console.WriteLine(tr.getarea());
             //Console.WriteLine(sq.getarea());

@@ -6,7 +6,7 @@ namespace CSharp_Basics
 {
     public class Teacher : Inheriting,IPayroll
     {
-        public string subject;
+        public string subject { get; set; }
 
         public Teacher(string Subject)
         {

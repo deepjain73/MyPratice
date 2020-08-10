@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -17,6 +17,7 @@ namespace CSharp_Basics
             payees.Add(new Teacher());
             payees.Add(new Teacher());
             payees.Add(new Principal());
+            Logger.log("Payroll started","Payroll");
 
         }
 
@@ -26,6 +27,8 @@ namespace CSharp_Basics
             {
                 p.pay();
             }
+
+            Logger.log("Payall completed","Payroll",2);
         }
     }
 }

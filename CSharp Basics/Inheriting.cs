@@ -6,14 +6,14 @@ namespace CSharp_Basics
 {
    public class Inheriting
     {
-        public string name;
-        public string address;
-        protected int phone;
+        public string name { get; set; }
+        public string address { get; set; }
+        public int phone { get; set; }
 
-        public int Phone
-        {
-            set { phone = value; }
-        }
+        //public int Phone
+        //{
+        //    set { phone = value; }
+        //}
 
     }
 }
