@@ -79,3 +79,15 @@ namespace MyPratice
     }
 }
 
+//int Length = digits.Length;
+//        for(int i=Length-1;i>=0;i--){
+//            if(digits[i]<9){
+//                digits[i]++;
+//                return digits;
+//            }
+//            digits[i]=0;
+//        }
+       
+//        int[] tmp = new int[Length + 1];
+//tmp[0]=1;
+//        return tmp;

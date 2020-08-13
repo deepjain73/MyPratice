@@ -6,8 +6,8 @@ namespace MyPratice
 {
     public class Array
     {
-       int[] rollno;
-       public void SetArray()
+        int[] rollno;
+        public void SetArray()
         {
             rollno = new int[10]; /*{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };*/   //array initailization
             rollno[0] = 1;
@@ -21,7 +21,7 @@ namespace MyPratice
             rollno[8] = 9;
             rollno[9] = 10;
 
-           // for (int i = 0; i < 10; Console.WriteLine(i), i++);
+            // for (int i = 0; i < 10; Console.WriteLine(i), i++);
         }
 
         public void LoopThroughArray()
@@ -81,18 +81,197 @@ namespace MyPratice
             }
         }
 
-            public void nameprint(string name)
+        public void nameprint(string name)
         {
             Console.WriteLine("Hello" + " " + name);
         }
 
         public void reversename()
         {
-            for(int i=name.Length-1; i>=0; i--)
+            for (int i = name.Length - 1; i >= 0; i--)
             {
                 Console.WriteLine(name[i]);
             }
         }
 
+
+
+        public void PlusOne(int[] digits)
+        {
+
+            if (digits == null)
+            {
+                return;
+            }
+            int carry = 0, output = 0;
+            for (int i = digits.Length - 1; i >= 0; i--)
+            {
+                if (i == digits.Length - 1)
+                {
+                    output = digits[i] + 1 + carry;
+                }
+                else
+                    output = digits[i] + carry;
+
+                if (output >= 10)
+                {
+                    carry = output / 10;
+                    output = output % 10;
+                    digits[i] = output;
+                }
+                else
+                {
+                    digits[i] = output;
+                    break;
+                }
+            }
+            for (int i = 0; i < digits.Length; i++)
+                Console.Write(digits[i].ToString() + " ");
+
+
+
+
+
+        }
+
+        public void reverse(string s)
+        {
+            char[] c = s.ToCharArray();
+
+            for (int i = 0; i < c.Length/2 ; i++)
+            {
+                char tmp = c[i];
+                c[i] = c[c.Length - 1 - i];
+                c[c.Length - 1 - i] = tmp;
+
+            }
+            Console.WriteLine(c);
+        }
+
+        public bool palindrome(string s)
+        {
+            char[] c = s.ToCharArray();
+            int n = c.Length;
+
+            for (int i = 0; i < n / 2; i++)
+            {
+                if (c[i] != c[n - 1 - i])
+                {
+                    return false;
+                }
+            }
+
+            return true;
+
+        }
+
+        public int binarysearch(int[] s, int target)
+        {
+            int mid, low = 0, high = s.Length - 1;
+
+            while (low <= high)
+            {
+                mid = (low + high) / 2;
+
+                if (s[mid] == target)
+                {
+                    return mid;
+                }
+
+                if (target > s[mid])
+                {
+                    low = mid + 1;
+                }
+
+                else
+                {
+                    high = mid - 1;
+                }
+            }
+
+            return -1;
+        }
+
+        public int binarysearch1(int[] s, int target, int l, int h)
+        {
+            if (l <= h)
+            {
+                int mid;
+
+                mid = (l + h) / 2;
+
+                if (s[mid] == target)
+                {
+                    return mid;
+                }
+
+                if (target > s[mid])
+
+                    return binarysearch1(s, target, mid + 1, h);
+
+                else
+
+                return binarysearch1(s, target, l, mid - 1);
+
+            }
+            return -1;
+
+
+        }
+
+        public void reverse1(char[] c,int start, int end)
+        {
+            for (int i = start, j = end; i <= (start + end) / 2 ; i++,j--)
+            {
+                char temp = c[i];
+                c[i] = c[j];
+                c[j] = temp;
+            }
+
+            
+        }
+
+        public void stringhandling(char[] s)
+        {
+            int k=0, j=0;
+            for ( k = 0; k < s.Length; k++, j++)
+            {   
+                //just forward j until you find space or end of array
+                while (j <s.Length && s[j] != ' ')
+                    j++;
+                //reverse using start and end index
+                reverse1(s, k, j-1);
+
+                //forward k to j and then k++ will move it to next char after space
+                k = j;               
+            }
+            //print array
+            Console.WriteLine(s);
+            //call reverse on full array
+            reverse1(s, 0, s.Length-1);
+
+        }
+
+        public void selectionsort(int[] s)
+        {
+            for (int i = 0; i < s.Length; i++)
+            {
+                for (int j = i + 1; j < s.Length; j++)
+                {
+                    if (s[j] < s[i])
+                    {
+                        int temp = s[i];
+                        s[i] = s[j];
+                        s[j] = temp;
+                    }
+                }
+
+            }
+        }
+
     }
 }
+    
+
+    
+            

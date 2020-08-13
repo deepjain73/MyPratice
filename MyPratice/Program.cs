@@ -10,12 +10,37 @@ namespace MyPratice
         static void Main(string[] args)
         {
 
-            //Array a = new Array();
+            Array a = new Array();
             //a.SetArray();
             //a.LoopThroughArray();
             //a.nameprint("Deepti");
             //a.namearray();
             //a.reversename();
+
+            //int[] n = new int[] { 1, 9, 9, 9, 9 };
+            //a.PlusOne(n);
+
+            //string s = "India is my Country";
+            //char[] c = s.ToCharArray();
+            //Console.WriteLine(c);
+            ////a.reverse(s);
+            //a.stringhandling(c);
+            ////Console.WriteLine(a.palindrome(s));
+            ////a.reverse1(c, 0, 4);
+            //Console.WriteLine(c);
+
+            int[] t = { 1, 3, 6, 2, 5 };
+            a.selectionsort(t);
+            foreach(var i in t)
+            Console.WriteLine(i);
+            
+
+            //int[] b =  { 1, 2, 14, 20, 25, 30, 50 };
+            //int k = 25;
+            ////Console.WriteLine(a.binarysearch(b, k));
+            //Console.WriteLine(a.binarysearch1(b, k, 0, b.Length));
+
+
 
 
             //EvenOdd e = new EvenOdd();
