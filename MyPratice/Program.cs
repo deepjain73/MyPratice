@@ -2,6 +2,7 @@
 using System.Reflection;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
+using System.Collections;
 
 namespace MyPratice
 {
@@ -10,7 +11,7 @@ namespace MyPratice
         static void Main(string[] args)
         {
 
-            Array a = new Array();
+            //Array a = new Array();
             //a.SetArray();
             //a.LoopThroughArray();
             //a.nameprint("Deepti");
@@ -29,11 +30,11 @@ namespace MyPratice
             ////a.reverse1(c, 0, 4);
             //Console.WriteLine(c);
 
-            int[] t = { 1, 3, 6, 2, 5 };
-            a.selectionsort(t);
-            foreach(var i in t)
-            Console.WriteLine(i);
-            
+            //int[] t = { 1, 3, 6, 2, 5 };
+            //a.selectionsort(t);
+            //foreach(var i in t)
+            //Console.WriteLine(i);
+
 
             //int[] b =  { 1, 2, 14, 20, 25, 30, 50 };
             //int k = 25;
@@ -687,6 +688,45 @@ namespace MyPratice
             //n3.next = n4;
 
             //Console.WriteLine(ip.isPalindrome(ip.head));
+
+            //Tree t = new Tree();
+            //ArrayList al = new ArrayList();
+            //t.root = new Tree.Node(1);
+            //t.root.left = new Tree.Node(2);
+            //t.root.right = new Tree.Node(3);
+            //t.root.left.left = new Tree.Node(4);
+            //t.root.left.right = new Tree.Node(5);
+            //t.root.right.left = new Tree.Node(6);
+            //t.root.right.right = new Tree.Node(7);
+
+            //Console.WriteLine("Preorder:");
+            //t.preorder(t.root);
+            //Console.WriteLine("Inorder:");
+            //t.Inorder(t.root);
+            //Console.WriteLine("Postorder:");
+            //t.postorder(t.root);
+            //Console.WriteLine("BFS:");
+            //t.bfs(t.root, al);
+
+            // ImplementAQ iq = new ImplementAQ();
+            // iq.enqueue(1);
+            // iq.enqueue(2);
+            // iq.enqueue(28);
+            // iq.enqueue(24);
+            //Console.WriteLine( iq.dequeue());
+            // Console.WriteLine(iq.dequeue());
+
+            //ImplementAS ia = new ImplementAS();
+            //ia.push(1);
+            //ia.push(1);
+            //ia.push(17);
+            //ia.push(10);
+            //ia.push(15);
+            //ia.push(177);
+            //Console.WriteLine(ia.pop());
+
+
+
 
 
 
