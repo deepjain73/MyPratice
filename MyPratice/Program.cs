@@ -11,6 +11,11 @@ namespace MyPratice
         static void Main(string[] args)
         {
 
+            StringBinary sb = new StringBinary();
+            Console.WriteLine(sb.TitleToNumber("ABC"));
+            Console.WriteLine(sb.BinaryToNumber("111"));
+            sb.NumberToBinary(5);
+
             //Array a = new Array();
             //a.SetArray();
             //a.LoopThroughArray();
