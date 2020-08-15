@@ -11,10 +11,10 @@ namespace MyPratice
         static void Main(string[] args)
         {
 
-            StringBinary sb = new StringBinary();
-            Console.WriteLine(sb.TitleToNumber("ABC"));
-            Console.WriteLine(sb.BinaryToNumber("111"));
-            sb.NumberToBinary(5);
+            //StringBinary sb = new StringBinary();
+            //Console.WriteLine(sb.TitleToNumber("ABC"));
+            //Console.WriteLine(sb.BinaryToNumber("111"));
+            //sb.NumberToBinary(5);
 
             //Array a = new Array();
             //a.SetArray();
@@ -522,8 +522,10 @@ namespace MyPratice
 
 
             //reverse.printlist(reverse.head);
-            //reverse.head = reverse.reverselist(reverse.head, 3);
+            ////reverse.head = reverse.reverselist(reverse.head, 3);
+
             //Console.WriteLine("Reverse linked list:");
+            //reverse.head = reverse.reversealist(reverse.head);
 
             //reverse.printlist(reverse.head);
 
@@ -549,7 +551,7 @@ namespace MyPratice
             //Findnthnode.Node n4 = new Findnthnode.Node(25);
             //n3.next = n4;
 
-            //Console.WriteLine(fn.findnthNode(fn.head, 2));
+            //Console.WriteLine(fn.findnthNode(fn.head, 3));
 
 
 
@@ -568,7 +570,7 @@ namespace MyPratice
 
             //MergeLinkedList ml = new MergeLinkedList();
             //ml.mergedlinkedlist(ml1.head, ml2.head);
-            ////ml.printlist(ml.head);
+            //ml.printlist(ml.head);
 
 
 

@@ -75,7 +75,25 @@ namespace MyPratice
             //}
         }
 
+        public Node reversealist(Node n)
+        {
+            
 
+            Node prev = null;
+            Node next = null;
+            Node current = n;
+
+            while(current != null)
+            {
+                next = current.next;
+                current.next = prev;
+                prev = current;
+                current = next;
+            }
+
+
+            return prev;
+        }
 
 
 

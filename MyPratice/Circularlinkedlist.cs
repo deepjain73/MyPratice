@@ -46,10 +46,12 @@ namespace MyPratice
                     //}
                     //return true; 
 
+                    // return slowpointer.data;
                     return true;
                 }
             }
 
+            // return -1;
             return false;
          }
     }
