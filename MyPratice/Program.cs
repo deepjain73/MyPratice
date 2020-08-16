@@ -733,7 +733,19 @@ namespace MyPratice
             //Console.WriteLine(ia.pop());
 
 
+            // ["MyLinkedList","addAtHead","addAtTail","addAtIndex","get","deleteAtIndex","get"]
+            //[[],[1],[3],[1,2],[1],[1],[1]]
 
+            DesignALinkedList dl = new DesignALinkedList();
+            //dl.head = new DesignALinkedList.Node(1);
+
+            int a = 1, c = 2, b = 3;
+            
+
+            dl.AddAtHead(a);
+            dl.AddAtTail(b);
+            dl.AddAtIndex(a, c);
+            dl.printlist();
 
 
 
