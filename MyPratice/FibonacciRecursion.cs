@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
@@ -39,11 +40,14 @@ namespace MyPratice
 
         public int fib(int n)
         {
-
-            if (n <= 1)
+            if(n == 0 || n == 1)
+            {               
                 return n;
+            }                
             else
-            return fib(n - 1) + fib(n - 2);
+            {
+                return fib(n - 1) + fib(n - 2);
+            }
 
         }
     }

@@ -12,14 +12,14 @@ namespace MyPratice
         {
             if(myDict.ContainsKey(url))
             {
-                return "www.bit.ly/"+myDict[url].ToString();
+                return "www.bit.ly/" + myDict[url].ToString();
             }
             else
             {
                 id = id + 1;
                 var shorturl = encode(id);
                 myDict.Add(url, shorturl);
-                return "www.bit.ly/"+shorturl;
+                return "www.bit.ly/" + shorturl;
             }
         }
 
@@ -28,7 +28,7 @@ namespace MyPratice
             string characters = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
             int baselenght = 64;
             StringBuilder sb = new StringBuilder();
-            while(id>0)
+            while(id > 0)
             {
                 var mynum = id % baselenght;
                 sb.Append(characters[mynum]);

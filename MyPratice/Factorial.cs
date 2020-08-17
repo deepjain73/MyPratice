@@ -12,5 +12,18 @@ namespace MyPratice
                 return n;
            return n * Fact(n - 1);
         }
+
+        public int facto(int n)
+        {
+            int output = 1;
+            for(int i = 1; i<= n;i++)
+            {
+                output = output * i;
+               // Console.WriteLine(output);
+            }
+
+            return output;
+            
+        }
     }
 }

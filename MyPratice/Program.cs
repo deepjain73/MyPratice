@@ -49,7 +49,7 @@ namespace MyPratice
 
 
 
-            //EvenOdd e = new EvenOdd();
+            // EvenOdd e = new EvenOdd();
             //e.EvenorOdd();
             //e.even();
             //e.odd();
@@ -184,10 +184,11 @@ namespace MyPratice
 
             //FibonacciRecursion fb = new FibonacciRecursion();
 
-            ////fb.fibonaaci(5);
-            ////Console.WriteLine(fb.fib(4));
+            //fb.fibonaaci(5);
+            //Console.WriteLine(fb.fib(6));
             //Factorial ft = new Factorial();
             //Console.WriteLine(ft.Fact(4));
+            //Console.WriteLine(ft.facto(5));
 
             //NextGreaterElement nx = new NextGreaterElement();
             //nx.printnextelement();
@@ -736,20 +737,110 @@ namespace MyPratice
             // ["MyLinkedList","addAtHead","addAtTail","addAtIndex","get","deleteAtIndex","get"]
             //[[],[1],[3],[1,2],[1],[1],[1]]
 
-            DesignALinkedList dl = new DesignALinkedList();
+            //DesignALinkedList dl = new DesignALinkedList();
             //dl.head = new DesignALinkedList.Node(1);
 
-            int a = 1, c = 2, b = 3;
-            
-
-            dl.AddAtHead(a);
-            dl.AddAtTail(b);
-            dl.AddAtIndex(a, c);
-            dl.printlist();
+            // int a = 1, c = 2, b = 3;
 
 
+            //dl.AddAtHead(a);
+            //dl.AddAtTail(b);
+            //dl.AddAtIndex(a, c);
+            //dl.printlist();
 
-            //Console.ReadLine();
+            // shifting array:
+            //int[] n = { 1, 2, 4, 6, 7 };
+
+            //int temp = n[0];
+            //for (int i = 0; i < n.Length - 1; i++)
+            //{
+            //    n[i] = n[i + 1];
+            //}
+            //n[n.Length - 1] = temp;
+
+            //for(int i = 0;i<n.Length;i++)
+            //Console.WriteLine(n[i]);
+
+
+
+            //ImplementABinarySearch ib = new ImplementABinarySearch();
+            //int[] n = { 20, 30, 10, 50, 35, 60, 45 };
+
+            //Console.WriteLine("Input:");
+            //var d = int.Parse(Console.ReadLine());
+            //Console.WriteLine(ib.searchandsort(n, d));
+
+            //Circular sorted array:
+
+            //int[] s = { 9,10,2,5,6,8 };
+            //var k = 5;
+            //Console.WriteLine(search(s, k));
+
+            //static int search(int[] s,int k)
+            //{
+            //    int mid = 0, high = s.Length - 1, low = 0;
+
+            //    while (low <= high)
+            //    {
+            //        mid = (low + high) / 2;
+
+            //        if (s[mid] == k)
+            //            return mid;
+
+            //        if (s[low] <= s[high])
+            //        {
+
+            //            if (k >= s[low] && k < s[mid])
+            //            {
+            //                high = mid - 1;
+            //            }
+            //            else
+            //                low = mid + 1;
+            //        }
+
+            //        else
+            //        {
+
+            //            if (k > s[mid] && k <= s[high])
+            //            {
+            //                low = mid + 1;
+            //            }
+            //            else
+            //                high = mid - 1;
+            //        }
+
+            //    }
+
+
+            //    return -1;
+            //}
+
+
+            IntersectingLinkedList il1 = new IntersectingLinkedList();
+            IntersectingLinkedList il2 = new IntersectingLinkedList();
+            IntersectingLinkedList il = new IntersectingLinkedList();
+
+            il1.headA = new IntersectingLinkedList.Node(1);
+            IntersectingLinkedList.Node n1 = new IntersectingLinkedList.Node(2);
+            il1.headA.next = n1; 
+
+            il2.headB = new IntersectingLinkedList.Node(6);
+            IntersectingLinkedList.Node n = new IntersectingLinkedList.Node(5);
+            il2.headB.next = n;
+            IntersectingLinkedList.Node n4 = new IntersectingLinkedList.Node(4);
+            n.next = n4;
+
+            IntersectingLinkedList.Node n5 = new IntersectingLinkedList.Node(3);
+            n4.next = n5;
+
+            n1.next = n5;
+            //Console.WriteLine(il1.headA);
+           // Console.WriteLine(il2.headB);
+            var ou=il.inttersecting(il1.headA, il2.headB);
+            Console.WriteLine(ou.data.ToString());
+
+
+            Console.ReadLine();
 
         }
     }
