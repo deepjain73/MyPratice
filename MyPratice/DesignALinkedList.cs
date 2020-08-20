@@ -105,14 +105,25 @@ namespace MyPratice
             if (index < 0)
                 return;
 
-
+            Node n = new Node(val);
             if (index == 0)
             {
                 AddAtHead(val);
                 return;
+
+
+                //if (head == null)
+                //{
+                //    head = n;
+                //}
+                //else
+                //{
+                //    n.next = head;
+                //    head = n;
+                //}
             }
 
-            Node n = new Node(val);
+            //Node n = new Node(val);
             Node current = head;
             int i = 0;
 

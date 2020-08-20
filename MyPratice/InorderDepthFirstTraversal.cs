@@ -24,7 +24,7 @@ namespace MyPratice
         {
             if (n == null)
             {
-                Console.WriteLine("Tree is null");
+                return;
             }
 
                 if(n.left != null)

@@ -60,7 +60,21 @@ namespace MyPratice
                 Console.WriteLine(n.value);
             }
         }
+
+        public Node SearchTree(Node root, int key)
+        {
+            if (root == null)
+                return null;
+            if (root.value == key)
+                return root;
+            if (key < root.value)
+                return SearchTree(root.left, key);
+            else
+                return SearchTree(root.right, key);
+        }
     }
+
+    
 
 }
 

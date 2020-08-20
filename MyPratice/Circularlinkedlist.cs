@@ -17,7 +17,7 @@ namespace MyPratice
             {
                 this.data = d;
                 this.next = null;
-               
+
             }
         }
 
@@ -29,7 +29,7 @@ namespace MyPratice
             var slowpointer = head;
             var fastpointer = head;
 
-            
+
             while (fastpointer != null && slowpointer != null && fastpointer.next != null && slowpointer.next != null)
             {
                 fastpointer = fastpointer.next.next;
@@ -53,7 +53,38 @@ namespace MyPratice
 
             // return -1;
             return false;
-         }
+        }
+
+        public Node DetectCycle(Node head)
+        {
+
+            if (head == null || head.next == null)
+            {
+                return null;
+            }
+
+            Node s = head;
+            Node f = head;
+
+            while (f != null && f.next != null)
+            {
+                s = s.next;
+                f = f.next.next;
+
+                if (s == f)
+                {
+                    s = head;
+                    while (s != f)
+                    {
+                        s = s.next;
+                        f = f.next;
+                    }
+                    return s;
+                }
+            }
+
+            return null;
+        }
     }
 }
 

@@ -27,8 +27,10 @@ namespace MyPratice
             //a.PlusOne(n);
 
             //string s = "India is my Country";
+            //Console.WriteLine(s.ToUpper());
             //char[] c = s.ToCharArray();
-            //Console.WriteLine(c);
+
+            //Console.WriteLine(c) ;
             ////a.reverse(s);
             //a.stringhandling(c);
             ////Console.WriteLine(a.palindrome(s));
@@ -412,7 +414,8 @@ namespace MyPratice
             //root.right.left = new BinaryTree.Node(6);
             //root.left.left.left = new BinaryTree.Node(8);
 
-            //br.breadthfirstsearch(root);
+            ////br.breadthfirstsearch(root);
+            //var n = br.SearchTree(root, 8);
 
 
             //Console.WriteLine(br.countNodes(root));
@@ -502,7 +505,9 @@ namespace MyPratice
             //Circularlinkedlist.Node n4 = new Circularlinkedlist.Node(50);
             //n3.next = n4;
             //n4.next = n3;
-            //Console.WriteLine(cl.IsCircular(cl.head));
+            ////Console.WriteLine(cl.IsCircular(cl.head));
+            //var c = cl.DetectCycle(cl.head);
+            //    Console.WriteLine(c.data);
 
             //ReverseLinkedList reverse = new ReverseLinkedList();
             //reverse.head = new ReverseLinkedList.Node(1);
@@ -822,7 +827,7 @@ namespace MyPratice
 
             il1.headA = new IntersectingLinkedList.Node(1);
             IntersectingLinkedList.Node n1 = new IntersectingLinkedList.Node(2);
-            il1.headA.next = n1; 
+            il1.headA.next = n1;
 
             il2.headB = new IntersectingLinkedList.Node(6);
             IntersectingLinkedList.Node n = new IntersectingLinkedList.Node(5);
@@ -835,8 +840,8 @@ namespace MyPratice
 
             n1.next = n5;
             //Console.WriteLine(il1.headA);
-           // Console.WriteLine(il2.headB);
-            var ou=il.inttersecting(il1.headA, il2.headB);
+            // Console.WriteLine(il2.headB);
+            var ou = il.inttersecting(il1.headA, il2.headB);
             Console.WriteLine(ou.data.ToString());
 
 
