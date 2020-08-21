@@ -23,7 +23,7 @@ namespace MyPratice
             //a.namearray();
             //a.reversename();
 
-            //int[] n = new int[] { 1, 9, 9, 9, 9 };
+            //int[] n = new int[] {  9, 9 };
             //a.PlusOne(n);
 
             //string s = "India is my Country";
@@ -114,14 +114,14 @@ namespace MyPratice
             //DecreasingFrequency df = new DecreasingFrequency();
             //df.decreasingFrequency();
 
-            //MyQueue<int> myqueue = new MyQueue<int>();
-            ////myqueue.Enque(100);
-            ////myqueue.Enque(20);
-            ////myqueue.Enque(10);
-            ////myqueue.Enque(3);
+            MyQueue<int> myqueue = new MyQueue<int>();
+            //myqueue.Enque(100);
+            //myqueue.Enque(20);
+            //myqueue.Enque(10);
+            //myqueue.Enque(3);
 
-            ////int i = myqueue.Dque();
-            ////Console.WriteLine(i);
+            //int i = myqueue.Dque();
+            //Console.WriteLine(i);
 
             //myqueue.Enqueue(1);
             //myqueue.Enqueue(2);
@@ -821,28 +821,48 @@ namespace MyPratice
             //}
 
 
-            IntersectingLinkedList il1 = new IntersectingLinkedList();
-            IntersectingLinkedList il2 = new IntersectingLinkedList();
-            IntersectingLinkedList il = new IntersectingLinkedList();
+            //IntersectingLinkedList il1 = new IntersectingLinkedList();
+            //IntersectingLinkedList il2 = new IntersectingLinkedList();
+            //IntersectingLinkedList il = new IntersectingLinkedList();
 
-            il1.headA = new IntersectingLinkedList.Node(1);
-            IntersectingLinkedList.Node n1 = new IntersectingLinkedList.Node(2);
-            il1.headA.next = n1;
+            //il1.headA = new IntersectingLinkedList.Node(1);
+            //IntersectingLinkedList.Node n1 = new IntersectingLinkedList.Node(2);
+            //il1.headA.next = n1;
 
-            il2.headB = new IntersectingLinkedList.Node(6);
-            IntersectingLinkedList.Node n = new IntersectingLinkedList.Node(5);
-            il2.headB.next = n;
-            IntersectingLinkedList.Node n4 = new IntersectingLinkedList.Node(4);
-            n.next = n4;
+            //il2.headB = new IntersectingLinkedList.Node(6);
+            //IntersectingLinkedList.Node n = new IntersectingLinkedList.Node(5);
+            //il2.headB.next = n;
+            //IntersectingLinkedList.Node n4 = new IntersectingLinkedList.Node(4);
+            //n.next = n4;
 
-            IntersectingLinkedList.Node n5 = new IntersectingLinkedList.Node(3);
-            n4.next = n5;
+            //IntersectingLinkedList.Node n5 = new IntersectingLinkedList.Node(3);
+            //n4.next = n5;
 
-            n1.next = n5;
-            //Console.WriteLine(il1.headA);
-            // Console.WriteLine(il2.headB);
-            var ou = il.inttersecting(il1.headA, il2.headB);
-            Console.WriteLine(ou.data.ToString());
+            //n1.next = n5;
+            ////Console.WriteLine(il1.headA);
+            //// Console.WriteLine(il2.headB);
+            //var ou = il.inttersecting(il1.headA, il2.headB);
+            //Console.WriteLine(ou.data.ToString());
+
+            //RemoventhNode rn = new RemoventhNode();
+            //rn.head = new RemoventhNode.Node(1);
+            ////RemoventhNode.Node n1 = new RemoventhNode.Node(2);
+            ////rn.head.next = n1;
+            ////RemoventhNode.Node n2 = new RemoventhNode.Node(3);
+            ////n1.next = n2;
+            ////RemoventhNode.Node n3 = new RemoventhNode.Node(4);
+            ////n2.next = n3;
+            ////RemoventhNode.Node n4 = new RemoventhNode.Node(5);
+            ////n3.next = n4;
+            //int k = 0;
+            //var v = rn.RemoveNthFromEnd(rn.head, k);
+            ////Console.WriteLine(v.data);
+            //rn.print(rn.head);
+
+            //Findtheresult fr = new Findtheresult();
+            //int[] n = { 12, 3, 4, 1, 6, 9 };
+            //int t = 11;
+            //fr.findresult(n, t);
 
 
             Console.ReadLine();

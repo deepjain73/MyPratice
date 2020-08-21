@@ -42,11 +42,15 @@ namespace MyPratice
             {
                 SetCapacity();
             }
+            //tail = (tail + 1) % array.Length;
+            //array[tail] = data;
+
+
             array[tail++] = data;  //data is parameter coming in and incrementing tail
             //tail++;
             //tail = (tail + 1) % array.Length;  // reset tail to zero;
 
-            Console.WriteLine("Item enqueue is " + data);
+           // Console.WriteLine("Item enqueue is " + data);
 
             //foreach (var i in array)
             //    Console.Write(i);

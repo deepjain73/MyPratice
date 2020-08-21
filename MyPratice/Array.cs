@@ -124,12 +124,19 @@ namespace MyPratice
                     digits[i] = output;
                     break;
                 }
+
+
+                if (carry >= 1)
+                {
+                    System.Array.Resize(ref digits, 1);
+                    digits[0] = carry;
+
+                }
             }
             for (int i = 0; i < digits.Length; i++)
                 Console.Write(digits[i].ToString() + " ");
 
-
-
+          
 
 
         }
