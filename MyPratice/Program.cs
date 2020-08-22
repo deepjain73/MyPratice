@@ -864,7 +864,10 @@ namespace MyPratice
             //int t = 11;
             //fr.findresult(n, t);
 
-
+            SortingArray012 sr = new SortingArray012();
+            int[] s = { 2,0,1,0,2,0,1 };
+            //sr.sortingarray(s);
+            sr.sort(s);
             Console.ReadLine();
 
         }

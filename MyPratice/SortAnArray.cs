@@ -33,7 +33,7 @@ namespace MyPratice
                 }
             }
 
-            while(a0>0)
+            while(a0 > 0)
             {
                 a0--;
                 Console.Write("0" + " ");
