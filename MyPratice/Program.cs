@@ -754,7 +754,7 @@ namespace MyPratice
             //dl.printlist();
 
             // shifting array:
-            //int[] n = { 1, 2, 4, 6, 7 };
+            //int[] n = { 1, 2, 4, 6, 7 };  
 
             //int temp = n[0];
             //for (int i = 0; i < n.Length - 1; i++)
@@ -864,10 +864,16 @@ namespace MyPratice
             //int t = 11;
             //fr.findresult(n, t);
 
-            SortingArray012 sr = new SortingArray012();
-            int[] s = { 2,0,1,0,2,0,1 };
-            //sr.sortingarray(s);
-            sr.sort(s);
+            //SortingArray012 sr = new SortingArray012();
+            //int[] s = { 2,0,1,0,2,0,1 };
+            ////sr.sortingarray(s);
+            //sr.sort(s);
+
+            FindElementAppearXTimes fx = new FindElementAppearXTimes();
+            int[] c = { 1, 2, 3, 1, 2, 2, 4, 5 };
+            int n = 3;
+            fx.findelement(c, n);
+
             Console.ReadLine();
 
         }
