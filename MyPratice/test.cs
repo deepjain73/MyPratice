@@ -40,5 +40,18 @@ namespace MyPratice
 
             return new string(c);
         }
+
+        //public void contiguous(int[]n)
+        //{
+        //    int sum = 0, maxsum = int.MinValue;
+        //    for(int i = 0;i<n.Length;i++)
+        //    {
+        //        sum = sum + n[i];
+
+        //        if (sum > maxsum)
+        //            maxsum = sum;
+        //    }
+        //    Console.WriteLine(maxsum);
+        //}
     }
 }

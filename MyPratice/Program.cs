@@ -67,7 +67,8 @@ namespace MyPratice
 
             //ContiguousSubarray s = new ContiguousSubarray();
             //int[] b = new int[8] { -2, -3, 4, -1, -2, 1, 5, -3 };
-            //// s.SumOfContiguousSubarray(b);
+            //s.contiguous(b);
+            //s.SumOfContiguousSubarray(b);
 
 
             //Findtheduplicate fd = new Findtheduplicate();
@@ -93,8 +94,8 @@ namespace MyPratice
             //int n = Array.Length;
             //Console.WriteLine(eq.equilibriumIndex(Array,7));
 
-            //LeadersArray la = new LeadersArray();
-            //la.leaderArray();
+            LeadersArray la = new LeadersArray();
+            la.leaderArray();
 
             //SmallestElement sr = new SmallestElement();
             //int[] smallarray = new int[] { 7, 10, 4, 3, 20, 15 };
@@ -114,7 +115,7 @@ namespace MyPratice
             //DecreasingFrequency df = new DecreasingFrequency();
             //df.decreasingFrequency();
 
-            MyQueue<int> myqueue = new MyQueue<int>();
+            //MyQueue<int> myqueue = new MyQueue<int>();
             //myqueue.Enque(100);
             //myqueue.Enque(20);
             //myqueue.Enque(10);
@@ -382,6 +383,8 @@ namespace MyPratice
             //{
             //    Console.WriteLine("notrotating");
             //}
+            //int[] s = { -1,-2,-3,-4 };
+
             //URL_shortner us = new URL_shortner();
             //var code = us.decode("aaa");
             //var output = us.encode(code);
@@ -869,10 +872,33 @@ namespace MyPratice
             ////sr.sortingarray(s);
             //sr.sort(s);
 
-            FindElementAppearXTimes fx = new FindElementAppearXTimes();
-            int[] c = { 1, 2, 3, 1, 2, 2, 4, 5 };
-            int n = 3;
-            fx.findelement(c, n);
+            //FindElementAppearXTimes fx = new FindElementAppearXTimes();
+            //int[] c = { 1, 2, 3, 1, 2, 2, 4, 5 };
+            //int n = 1;
+            //fx.findelement(c, n);
+
+            //CountTriplets ct = new CountTriplets();
+            //int[] s = { 1, 5, 3, 2 };
+            //ct.countTriplets(s);
+
+            //MergeArray ma = new MergeArray();
+            //int[] a = { 10 };
+            //int[] b = { 2, 3 };
+            //ma.mergearray(a, b);
+
+            //RearrangeArrayAlternately ra = new RearrangeArrayAlternately();
+            //int[] s = { 10, 20 ,30 ,40 ,50, 60 ,70 ,80 ,90, 100 ,110 };
+            //ra.rearrange(s);
+
+            //Number_of_pairs np = new Number_of_pairs();
+            //int[] a =  { 10, 19, 18 };
+            //int[] b = { 11, 15, 9 };
+            //np.findpairs(a, b);
+
+            //InversionOfArray ia = new InversionOfArray();
+            //int[] d = { 3, 1, 2 };
+            //ia.inversion(d);
+
 
             Console.ReadLine();
 

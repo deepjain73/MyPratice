@@ -13,7 +13,7 @@ namespace MyPratice
 
             for (int i = 0; i < b.Length; i++)
             {
-                if(b[i] >0 && sum< 0)
+                if(b[i] > 0 && sum < 0)
                 {
                     sum = 0;
                 }
@@ -27,6 +27,23 @@ namespace MyPratice
             }
 
             Console.WriteLine("The largest sum of contiguous subarray is" + " " + maxsumuptonow);
-       } 
+       }
+
+        public void contiguous(int[] n)
+        {
+            int sum = 0, maxsum = int.MinValue;
+            for (int i = 0; i < n.Length; i++)
+            {
+                if(n[i] > 0 && sum < 0)
+                {
+                    sum = 0;
+                }
+                sum = sum + n[i];
+
+                if (sum > maxsum)
+                    maxsum = sum;
+            }
+            Console.WriteLine(maxsum);
+        }
     }
 }

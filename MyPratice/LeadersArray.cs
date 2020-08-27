@@ -9,7 +9,7 @@ namespace MyPratice
     {
         public void leaderArray()
         {
-            int[] array = new int[] { 7, 4, 7, 5, 3 };
+            int[] array = new int[] { 7,4,5,7,3 };
             int j;
             int n = array.Length;
 
@@ -17,7 +17,7 @@ namespace MyPratice
             {
                 for( j = i+1; j < n; j++)
                 {
-                    if (array[j] >= array[i])
+                    if (array[j] > array[i])
                         break;
                 }
                 if (j == n)
