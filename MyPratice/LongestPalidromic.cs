@@ -22,7 +22,7 @@ namespace MyPratice
                 {
                     if(ispalindrome(S.Substring(i,j)))
                     {
-                        if(j-i > maxlength)
+                        if(j-i+1 > maxlength)
                         {
                             maxlength = S.Substring(i, j).Length;
                             startindex = i;
@@ -34,7 +34,7 @@ namespace MyPratice
             }
 
             if (maxlength > 0)
-                Console.WriteLine("The longerst palindromic substring in S is " + S.Substring(startindex,endindex) + " " + maxlength);
+                Console.WriteLine("The longest palindromic substring in S is " + S.Substring(startindex,endindex) + " " + maxlength);
 
             else
                 Console.WriteLine(" No longest palindromic substring in S found");

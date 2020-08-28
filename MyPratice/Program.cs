@@ -320,13 +320,13 @@ namespace MyPratice
             //string S = "madam";
             //pm.palindrome(S);
 
-            //LongestPalidromic lp = new LongestPalidromic();
-            //string S = "babad";
-            //lp.findlps(S);
+            LongestPalidromic lp = new LongestPalidromic();
+            string S = "aaaabbaa";
+            lp.findlps(S);
             //string s = "ABCDEFGHIJ";
-            //Console.WriteLine(s.Substring(1,2));
-            //Console.WriteLine(s.Substring(2, 2));
-            //Console.WriteLine(s.Substring(3, 2));
+           // Console.WriteLine(s.Substring(1, 2));
+           // Console.WriteLine(s.Substring(2, 2));
+           //Console.WriteLine(s.Substring(3, 2));
 
             //Reversestring rs = new Reversestring();
             //rs.reversestring();
@@ -922,11 +922,11 @@ namespace MyPratice
             //Console.WriteLine("Right side of binary tree:");
             //lt.rightview(lt.root, 1);
 
-            ParenthesisChecker pc = new ParenthesisChecker();
-            string c = "([])";
-            pc.check(c);
-            
-            
+            //ParenthesisChecker pc = new ParenthesisChecker();
+            //string c = "([])";
+            //pc.check(c);
+
+
 
 
 
