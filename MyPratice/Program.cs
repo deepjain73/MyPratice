@@ -3,6 +3,7 @@ using System.Reflection;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
 using System.Collections;
+using System.ComponentModel.Design.Serialization;
 
 namespace MyPratice
 {
@@ -94,8 +95,8 @@ namespace MyPratice
             //int n = Array.Length;
             //Console.WriteLine(eq.equilibriumIndex(Array,7));
 
-            LeadersArray la = new LeadersArray();
-            la.leaderArray();
+            //LeadersArray la = new LeadersArray();
+            //la.leaderArray();
 
             //SmallestElement sr = new SmallestElement();
             //int[] smallarray = new int[] { 7, 10, 4, 3, 20, 15 };
@@ -898,6 +899,36 @@ namespace MyPratice
             //InversionOfArray ia = new InversionOfArray();
             //int[] d = { 3, 1, 2 };
             //ia.inversion(d);
+
+            //MinimumPlatforms mp = new MinimumPlatforms();
+            //int[] a = { 0900,  0940, 0950,  1100, 1500, 1800 };
+            //int[] b = { 0910, 1200, 1120, 1130, 1900, 2000 };
+            //mp.findminplat(a, b);
+
+            //LeftRightViewofBinaryTree lt = new LeftRightViewofBinaryTree();
+            //lt.root = new LeftRightViewofBinaryTree.Node(1);
+            ////LeftViewofBinaryTree.Node root = new LeftViewofBinaryTree.Node(1);
+            //lt.root.left = new LeftRightViewofBinaryTree.Node(2);
+            //lt.root.right = new LeftRightViewofBinaryTree.Node(3);
+            //lt.root.left.left = new LeftRightViewofBinaryTree.Node(4);
+            //lt.root.left.right = new LeftRightViewofBinaryTree.Node(5);
+            //lt.root.left.left.right = new LeftRightViewofBinaryTree.Node(8);
+            //lt.root.right.left = new LeftRightViewofBinaryTree.Node(6);
+            //lt.root.right.right = new LeftRightViewofBinaryTree.Node(7);
+            //lt.root.right.right.right = new LeftRightViewofBinaryTree.Node(9);
+            //Console.WriteLine("Left side of binary tree:");
+            //lt.leftview(lt.root,1);
+
+            //Console.WriteLine("Right side of binary tree:");
+            //lt.rightview(lt.root, 1);
+
+            ParenthesisChecker pc = new ParenthesisChecker();
+            string c = "([])";
+            pc.check(c);
+            
+            
+
+
 
 
             Console.ReadLine();
