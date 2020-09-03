@@ -22,7 +22,7 @@ namespace MyPratice
                 }
                 if (j == n)
                 {
-                    Console.Write(array[i] + " ");
+                    Console.Write(i.ToString() + " ");
                 }
             }
         }

@@ -4,13 +4,93 @@ using System.Collections.Generic;
 using System.Net.Http.Headers;
 using System.Collections;
 using System.ComponentModel.Design.Serialization;
+using System.Text;
+using System.Runtime.InteropServices;
 
 namespace MyPratice
 {
+    class mytree
+    {
+        public Node root;
+        public class Node
+        {
+            public int value;
+            public Node left;
+            public Node right;
+
+            public Node(int v)
+            {
+                this.value = v;
+                this.left = null;
+                this.right = null;
+            }
+        }
+
+        public bool isBSt(Node root)
+        {
+           if(root == null)
+            {
+                return true;
+            }
+
+           if(root.left != null && root.value <= root.left.value)
+            {
+                return false;
+            }
+
+            if (root.right != null && root.value >= root.right.value)
+            {
+                return false;
+            }
+
+            return isBSt(root.left) && isBSt(root.right);
+        }
+    }
     class Program
     {
+        
         static void Main(string[] args)
         {
+
+            //mytree mt = new mytree();
+            //mytree.Node root = new mytree.Node(10);
+            //root.left = new mytree.Node(6);
+            //root.right = new mytree.Node(11);
+            //root.left.right = new mytree.Node(7);
+            //root.right.left = new mytree.Node(9);
+            //root.left.left = new mytree.Node(4);
+            //root.right.right = new mytree.Node(21);
+            // Console.WriteLine(mt.isBSt(root));
+
+           SerializeDeserailizeABinaryTree sd = new SerializeDeserailizeABinaryTree();
+            SerializeDeserailizeABinaryTree.Node root = new SerializeDeserailizeABinaryTree.Node(10);
+            root.left = new SerializeDeserailizeABinaryTree.Node(6);
+            root.right = new SerializeDeserailizeABinaryTree.Node(11);
+            root.left.right = new SerializeDeserailizeABinaryTree.Node(7);
+            root.right.left = new SerializeDeserailizeABinaryTree.Node(9);
+            root.left.left = new SerializeDeserailizeABinaryTree.Node(4);
+            root.right.right = new SerializeDeserailizeABinaryTree.Node(21);
+
+            sd.serialize(root);
+
+            //int i = 2, j = 2;
+            //StringBuilder sb1 = new StringBuilder("hello");
+            //StringBuilder sb2 = new StringBuilder("hello");
+            //if (i == j)
+            //    Console.WriteLine("i and j are equal");
+            //else
+            //    Console.WriteLine("i and j are not equal");
+
+
+            //if (sb1 == sb2)
+            //    Console.WriteLine("sbs are equal");
+            //else
+            //    Console.WriteLine("sbs are not equal");
+
+            //if(sb1.Equals(sb2))
+            //    Console.WriteLine("sbs are equal");
+            //else
+            //    Console.WriteLine("sbs are not equal");
 
             //StringBinary sb = new StringBinary();
             //Console.WriteLine(sb.TitleToNumber("ABC"));
@@ -320,21 +400,22 @@ namespace MyPratice
             //string S = "madam";
             //pm.palindrome(S);
 
-            LongestPalidromic lp = new LongestPalidromic();
-            string S = "aaaabbaa";
-            lp.findlps(S);
+            //LongestPalidromic lp = new LongestPalidromic();
+            //string S = "ababd";
+            //lp.findlps(S);
             //string s = "ABCDEFGHIJ";
-           // Console.WriteLine(s.Substring(1, 2));
-           // Console.WriteLine(s.Substring(2, 2));
-           //Console.WriteLine(s.Substring(3, 2));
+            // Console.WriteLine(s.Substring(1, 2));
+            // Console.WriteLine(s.Substring(2, 2));
+            //Console.WriteLine(s.Substring(3, 2));
 
             //Reversestring rs = new Reversestring();
             //rs.reversestring();
 
             //RemoveDuplicates rm = new RemoveDuplicates();
             //string t = "azxxzy";
-            //int i = 0;
-            //rm.removeduplicate();
+            ////int i = 0;
+            //rm.removeDups(t);
+
 
             //RotatingString rs = new RotatingString();
 
@@ -352,18 +433,18 @@ namespace MyPratice
             //    Console.WriteLine("Clockwise not Rotated");
             //}
 
-            // RomanToIntConversion rc = new RomanToIntConversion();
-            // //rc.romantoint("2");
-            // //rc.romantoint("V");
-            ////rc.romantoint("III");
-            // rc.romantoint("VIII");
-            // // rc.romantoint("MCMIV");
+            //RomanToIntConversion rc = new RomanToIntConversion();
+            //rc.romantoint("2");
+            //rc.romantoint("V");
+            //rc.romantoint("III");
+            //rc.romantoint("VIII");
+            //rc.romantoint("MCMIV");
 
             // LCSubstring lc = new LCSubstring();
             // lc.findlcs();
 
-            // Longestsubstringwithoutdup lp = new Longestsubstringwithoutdup();
-            // lp.findlswithoutdup();
+            //Longestsubstringwithoutdup lp = new Longestsubstringwithoutdup();
+            //lp.findlswithoutdup();
 
             //ImplementAtoi im = new ImplementAtoi();
             //Console.WriteLine( im.atoi());
@@ -491,6 +572,7 @@ namespace MyPratice
             //n3.next = n4;
             //RotateLinkedListClockwise.Node n5 = new RotateLinkedListClockwise.Node(60);
             //n4.next = n5;
+
 
             //rl.printList(rl.head);
             //rl.rotateclockwise(rl.head, 4);
@@ -926,12 +1008,55 @@ namespace MyPratice
             //string c = "([])";
             //pc.check(c);
 
+            //Dictionary<int, int> d = new Dictionary<int, int>();
+
+            //int[] s = new int[] { 1, 2, 3, 4, 2, 2, 2, 3 };
+            //int result = 0;
+            //foreach (var i in s)
+            //{
+            //    if (d.ContainsKey(i))
+            //    {
+            //        d[i] = d[i] + 1;
+            //    }
+            //    else
+            //    {
+            //        d.Add(i, 1);
+            //    }
+            //}
+
+            //foreach (var count in d)
+            //{
+            //    result = count.Key;
+            //    if (count.Value == 4)
+            //    {
+            //        break;
+            //    }
+
+            //}
+            //if (result == 0)
+            //    Console.WriteLine("NO element found");
+            //else
+            //{
+            //    Console.WriteLine("The element {0} appers most ", result);
+            //}
 
 
+            //string s = "geeksforgeeks";
+            //Dictionary<char, int> d = new Dictionary<char, int>();
+            //foreach(var i in s)
+            //{
+            //    if(!d.ContainsKey(i))
+            //    {
+            //        d.Add(i, 1);
+            //    }
+            //}
 
+            //foreach(var v in d)
+            //{
+            //    Console.WriteLine(v.Key);
+            //}
 
-
-            Console.ReadLine();
+            //Console.ReadLine();
 
         }
     }
