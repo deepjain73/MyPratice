@@ -7,9 +7,9 @@ namespace LeetCodePracticeProblems
 {
     class ShuffleTheArray
     {
-        public int[] Shuffle(int[] nums, int n)
-        {
+        //public int[] Shuffle(int[] nums, int n)
+        //{
 
-        }
+        //}
     }
 }
