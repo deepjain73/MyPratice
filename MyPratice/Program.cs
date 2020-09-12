@@ -51,7 +51,14 @@ namespace MyPratice
         
         static void Main(string[] args)
         {
-            
+            FindDeepestNode fn = new FindDeepestNode();
+            FindDeepestNode.Node root = new FindDeepestNode.Node('a');
+            root.left = new FindDeepestNode.Node('b');
+            root.right = new FindDeepestNode.Node('c');
+            //root.left.left = new FindDeepestNode.Node('d');
+            root.left.right = new FindDeepestNode.Node('g');
+            //fn.deepestNode(root);
+
 
             //mytree mt = new mytree();
             //mytree.Node root = new mytree.Node(10);
@@ -63,16 +70,16 @@ namespace MyPratice
             //root.right.right = new mytree.Node(21);
             // Console.WriteLine(mt.isBSt(root));
 
-           //SerializeDeserailizeABinaryTree sd = new SerializeDeserailizeABinaryTree();
-           // SerializeDeserailizeABinaryTree.Node root = new SerializeDeserailizeABinaryTree.Node(10);
-           // root.left = new SerializeDeserailizeABinaryTree.Node(6);
-           // root.right = new SerializeDeserailizeABinaryTree.Node(11);
-           // root.left.right = new SerializeDeserailizeABinaryTree.Node(7);
-           // root.right.left = new SerializeDeserailizeABinaryTree.Node(9);
-           // root.left.left = new SerializeDeserailizeABinaryTree.Node(4);
-           // root.right.right = new SerializeDeserailizeABinaryTree.Node(21);
+            //SerializeDeserailizeABinaryTree sd = new SerializeDeserailizeABinaryTree();
+            // SerializeDeserailizeABinaryTree.Node root = new SerializeDeserailizeABinaryTree.Node(10);
+            // root.left = new SerializeDeserailizeABinaryTree.Node(6);
+            // root.right = new SerializeDeserailizeABinaryTree.Node(11);
+            // root.left.right = new SerializeDeserailizeABinaryTree.Node(7);
+            // root.right.left = new SerializeDeserailizeABinaryTree.Node(9);
+            // root.left.left = new SerializeDeserailizeABinaryTree.Node(4);
+            // root.right.right = new SerializeDeserailizeABinaryTree.Node(21);
 
-           // sd.serialize(root);
+            // sd.serialize(root);
 
             //int i = 2, j = 2;
             //StringBuilder sb1 = new StringBuilder("hello");
@@ -500,8 +507,11 @@ namespace MyPratice
             //root.right.left = new BinaryTree.Node(6);
             //root.left.left.left = new BinaryTree.Node(8);
 
-            ////br.breadthfirstsearch(root);
-            //var n = br.SearchTree(root, 8);
+
+            //br.breadthfirstsearch(root);
+           // var n = br.SearchTree(root, 8);
+            //Console.WriteLine(br.SearchTree(root, 8));
+            
 
 
             //Console.WriteLine(br.countNodes(root));

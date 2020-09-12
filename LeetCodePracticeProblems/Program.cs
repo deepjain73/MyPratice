@@ -62,6 +62,91 @@ namespace LeetCodePracticeProblems
             //    Console.WriteLine(i);
             //}
 
+            //DecompressRunLengthEncodedList rd = new DecompressRunLengthEncodedList();
+            //int[] s = { 1, 2, 3, 4 };
+            //var c = rd.DecompressRLElist(s);
+            //foreach(var i in c)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //ReturnTargetArray rt = new ReturnTargetArray();
+            //int[] s = { 0, 1, 2, 3, 4 };
+            //int[] t = { 0, 1, 2, 2, 1 };
+            //var f = rt.CreateTargetArray(s, t);
+
+            //foreach (var i in f)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //rt.CreateTargetArray(s, t);
+
+            //XOROperationinanArray xr = new XOROperationinanArray();
+            //int c = 10, s = 5;
+
+            //Console.WriteLine(xr.XorOperation(c, s));
+
+            //SplitaStringinBalancedStrings ss = new SplitaStringinBalancedStrings();
+            //string s = "RLRRRLLRLL";
+            //Console.WriteLine(ss.BalancedStringSplit(s));
+
+            //FindLonelyNode fn = new FindLonelyNode();
+            //FindLonelyNode.Node root = new FindLonelyNode.Node(1);
+            //root.left = new FindLonelyNode.Node(2);
+            //root.right = new FindLonelyNode.Node(3);
+            //root.left.right = new FindLonelyNode.Node(4);
+            //root.right.left = new FindLonelyNode.Node(5);
+            //root.right.left.right = new FindLonelyNode.Node(6);
+            //fn.findlonelynode(root);
+
+            //RangeSumOfBst rs = new RangeSumOfBst();
+            //RangeSumOfBst.Node root = new RangeSumOfBst.Node(10);
+            //int l = 7, r = 15;
+            //Console.WriteLine(rs.RangeSumBST(root, l, r));
+
+            //findanagrammappings fm = new findanagrammappings();
+            //int[] a = { 12, 28, 46, 32, 50 };
+            //int[] b = { 50, 12, 32, 46, 28 };
+            //fm.findanamap(a, b);
+
+            //EvenNumberofDigits ed = new EvenNumberofDigits();
+            //int[] nums = { 12, 345, 2, 6, 7896 };
+            //Console.WriteLine(ed.FindNumbers(nums));
+
+
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer cl = new Convert_Binary_Number_in_a_Linked_List_to_Integer();
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node head = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(1);
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(0);
+            //head.next = n;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n1 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(0);
+            //n.next = n1;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n2 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(1);
+            //n1.next = n2;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n3 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(0);
+            //n2.next = n3;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n4 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(0);
+            //n3.next = n4;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n5 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(1);
+            //n4.next = n5;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n6 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(1);
+            //n5.next = n6;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n7 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(1);
+            //n6.next = n7;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n8 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(0);
+            //n7.next = n8;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n9 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(0);
+            //n8.next = n9;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n10 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(0);
+            //n9.next = n10;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n11 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(0);
+            //n10.next = n11;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n12 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(0);
+            //n11.next = n12;
+            //Convert_Binary_Number_in_a_Linked_List_to_Integer.Node n13 = new Convert_Binary_Number_in_a_Linked_List_to_Integer.Node(0);
+            //n12.next = n13;
+
+            //Console.WriteLine(cl.GetDecimalValue(head));
+
 
 
             Console.ReadLine();

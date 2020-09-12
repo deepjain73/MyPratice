@@ -72,9 +72,28 @@ namespace MyPratice
             else
                 return SearchTree(root.right, key);
         }
-    }
 
-    
+        public bool binarytreesearch(Node root, int k)
+        {
+            while(root != null)
+            {
+                if(k > root.value)
+                {
+                    root = root.right;
+                }
+
+                else if(k < root.value)
+                {
+                    root = root.left;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
 
 }
 
