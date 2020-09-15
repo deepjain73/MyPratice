@@ -51,13 +51,13 @@ namespace MyPratice
         
         static void Main(string[] args)
         {
-            FindDeepestNode fn = new FindDeepestNode();
-            FindDeepestNode.Node root = new FindDeepestNode.Node('a');
-            root.left = new FindDeepestNode.Node('b');
-            root.right = new FindDeepestNode.Node('c');
-            //root.left.left = new FindDeepestNode.Node('d');
-            root.left.right = new FindDeepestNode.Node('g');
-            //fn.deepestNode(root);
+            //FindDeepestNode fn = new FindDeepestNode();
+            //FindDeepestNode.Node root = new FindDeepestNode.Node('a');
+            //root.left = new FindDeepestNode.Node('b');
+            //root.right = new FindDeepestNode.Node('c');
+            ////root.left.left = new FindDeepestNode.Node('d');
+            //root.left.right = new FindDeepestNode.Node('g');
+            ////fn.deepestNode(root);
 
 
             //mytree mt = new mytree();
@@ -509,48 +509,51 @@ namespace MyPratice
 
 
             //br.breadthfirstsearch(root);
-           // var n = br.SearchTree(root, 8);
+            // var n = br.SearchTree(root, 8);
             //Console.WriteLine(br.SearchTree(root, 8));
-            
+
 
 
             //Console.WriteLine(br.countNodes(root));
 
-            //PreorderDepthFirstTraversal pd = new PreorderDepthFirstTraversal();
-            //PreorderDepthFirstTraversal.Node n = new PreorderDepthFirstTraversal.Node(10);
-            //n.left = new PreorderDepthFirstTraversal.Node(5);
-            //n.right = new PreorderDepthFirstTraversal.Node(8);
-            //n.left.left = new PreorderDepthFirstTraversal.Node(2);
-            //n.right.right = new PreorderDepthFirstTraversal.Node(9);
-            //n.left.right = new PreorderDepthFirstTraversal.Node(6);
-            //n.right.left = new PreorderDepthFirstTraversal.Node(7);
-            //n.left.left.left = new PreorderDepthFirstTraversal.Node(1);
+            PreorderDepthFirstTraversal pd = new PreorderDepthFirstTraversal();
+            PreorderDepthFirstTraversal.Node n = new PreorderDepthFirstTraversal.Node(10);
+            n.left = new PreorderDepthFirstTraversal.Node(5);
+            n.right = new PreorderDepthFirstTraversal.Node(8);
+            n.left.left = new PreorderDepthFirstTraversal.Node(2);
+            n.right.right = new PreorderDepthFirstTraversal.Node(9);
+            n.left.right = new PreorderDepthFirstTraversal.Node(6);
+            n.right.left = new PreorderDepthFirstTraversal.Node(7);
+            n.left.left.left = new PreorderDepthFirstTraversal.Node(1);
 
             //pd.preorder(n);
+            //Console.WriteLine("Preorder: " + "" + pd.Preorder(n));
 
-            //InorderDepthFirstTraversal id = new InorderDepthFirstTraversal();
-            //InorderDepthFirstTraversal.Node n = new InorderDepthFirstTraversal.Node(10);
-            //n.left = new InorderDepthFirstTraversal.Node(5);
-            //n.right = new InorderDepthFirstTraversal.Node(8);
-            //n.left.left = new InorderDepthFirstTraversal.Node(2);
-            //n.right.right = new InorderDepthFirstTraversal.Node(9);
-            //n.left.right = new InorderDepthFirstTraversal.Node(6);
-            //n.right.left = new InorderDepthFirstTraversal.Node(7);
-            //n.left.left.left = new InorderDepthFirstTraversal.Node(1);
+            InorderDepthFirstTraversal id = new InorderDepthFirstTraversal();
+            InorderDepthFirstTraversal.Node n2 = new InorderDepthFirstTraversal.Node(10);
+            n2.left = new InorderDepthFirstTraversal.Node(5);
+            n2.right = new InorderDepthFirstTraversal.Node(8);
+            n2.left.left = new InorderDepthFirstTraversal.Node(2);
+            n2.right.right = new InorderDepthFirstTraversal.Node(9);
+            n2.left.right = new InorderDepthFirstTraversal.Node(6);
+            n2.right.left = new InorderDepthFirstTraversal.Node(7);
+            n2.left.left.left = new InorderDepthFirstTraversal.Node(1);
 
-            //id.inorder(n);
+            //id.inorder(n2);
+            //Console.WriteLine("Inorder: " + "" + id.Inorder(n2));
 
-            //PostOrderDepthFirstTraversal id = new PostOrderDepthFirstTraversal();
-            //PostOrderDepthFirstTraversal.Node n = new PostOrderDepthFirstTraversal.Node(10);
-            //n.left = new PostOrderDepthFirstTraversal.Node(5);
-            //n.right = new PostOrderDepthFirstTraversal.Node(8);
-            //n.left.left = new PostOrderDepthFirstTraversal.Node(2);
-            //n.right.right = new PostOrderDepthFirstTraversal.Node(9);
-            //n.left.right = new PostOrderDepthFirstTraversal.Node(6);
-            //n.right.left = new PostOrderDepthFirstTraversal.Node(7);
-            //n.left.left.left = new PostOrderDepthFirstTraversal.Node(1);
+            PostOrderDepthFirstTraversal ip = new PostOrderDepthFirstTraversal();
+            PostOrderDepthFirstTraversal.Node n1 = new PostOrderDepthFirstTraversal.Node(10);
+            n1.left = new PostOrderDepthFirstTraversal.Node(5);
+            n1.right = new PostOrderDepthFirstTraversal.Node(8);
+            n1.left.left = new PostOrderDepthFirstTraversal.Node(2);
+            n1.right.right = new PostOrderDepthFirstTraversal.Node(9);
+            n1.left.right = new PostOrderDepthFirstTraversal.Node(6);
+            n1.right.left = new PostOrderDepthFirstTraversal.Node(7);
+            n1.left.left.left = new PostOrderDepthFirstTraversal.Node(1);
 
-            //id.postorder(n);
+            //ip.postorder(n1);
+            //Console.WriteLine("Postorder: " + "" + ip.Postorder(n1));
 
             //FindMiddelOfTheLinkedlist fm = new FindMiddelOfTheLinkedlist();
             //fm.head = new FindMiddelOfTheLinkedlist.Node(1);

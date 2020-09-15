@@ -40,6 +40,41 @@ namespace MyPratice
 
             Console.WriteLine(n.data);
         }
+
+        public IList<int> Postorder(Node root)
+        {
+            List<int> s = new List<int>();
+
+            if (root == null)
+            {
+                return s;
+            }
+            
+
+            Stack<Node> st = new Stack<Node>();
+            st.Push(root);
+
+            while (st.Count != 0)
+            {
+                root = st.Pop();
+                s.Add(root.data);
+
+                if (root.left != null)
+                {
+                    st.Push(root.left);
+                }
+
+               if(root.right != null)
+                {
+                    st.Push(root.right);
+                }
+
+                 Console.WriteLine(root.data);
+            }
+
+            return s;
+
+        }
     }
 }
 

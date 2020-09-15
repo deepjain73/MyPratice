@@ -27,17 +27,42 @@ namespace MyPratice
                 return;
             }
 
-                if(n.left != null)
-                {
-                    inorder(n.left);
+            if (n.left != null)
+            {
+                inorder(n.left);
+            }
+
+            Console.WriteLine(n.data);
+
+            if (n.right != null)
+            {
+                inorder(n.right);
+            }
+        }
+
+        public IList<int> Inorder(Node root)
+        {
+            List<int> s = new List<int>();
+
+            Stack<Node> st = new Stack<Node>();
+            
+            while (st.Count > 0 || root != null)
+            {
+                while(root != null)
+                { 
+                    st.Push(root);
+                    root = root.left;
                 }
 
-                Console.WriteLine(n.data);
 
-                if (n.right != null)
-                {
-                    inorder(n.right);
-                }
+                root = st.Pop();
+                s.Add(root.data);
+                Console.WriteLine(root.data);
+
+                root = root.right;
+            }
+
+            return s;
         }
     }
 }

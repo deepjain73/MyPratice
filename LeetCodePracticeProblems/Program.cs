@@ -147,7 +147,35 @@ namespace LeetCodePracticeProblems
 
             //Console.WriteLine(cl.GetDecimalValue(head));
 
+            //CountGoodTriplets cd = new CountGoodTriplets();
+            //int[] a = { 3, 0, 1, 1, 9, 7 };
+            //int x = 7, y = 2, z = 3;
 
+            //Console.WriteLine(cd.countGoodTriplets(a, x, y, z));
+
+            //MatrixDiagonalSum ms = new MatrixDiagonalSum();
+            //int[,] s = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } } ;
+            //int n = 3;
+
+            //Console.WriteLine(ms.DiagonalSum(s,n));
+
+            //ToLowerUpperCase tl = new ToLowerUpperCase();
+            //Console.WriteLine("Input: ");
+            //var a = Console.ReadLine();
+            //Console.WriteLine("Lower Case: " + " " + tl.toLowerCase(a));
+            //Console.WriteLine("Upper Case: " + " " + tl.toUpperCase(a));
+
+            //IntersectionOfThreeSortedArrays st = new IntersectionOfThreeSortedArrays();
+            //int[] a = { 1, 5, 10, 20, 40, 80 };
+            //int[] b = { 6, 7, 20, 80, 100 };
+            //int[] c = { 3, 4, 15, 20, 30, 70, 80, 120 };
+            //st.FindIntersection(a, b, c);
+            //st.findIntersection(a, b, c);
+
+            //Cells_with_Odd_Values_in_a_Matrix cm = new Cells_with_Odd_Values_in_a_Matrix();
+            //int n = 2, m = 3, x = 2;
+            //int[,] a = new int[,] { { 0, 1 }, { 1, 1 } };
+            //Console.WriteLine(cm.OddCells(n, m, a,x));
 
             Console.ReadLine();
 
