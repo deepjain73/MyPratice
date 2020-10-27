@@ -70,5 +70,37 @@ namespace MyPratice
         }
 
 
+        public string RemoveDuplicates1(string S)
+        {
+           
+            Stack<char> st = new Stack<char>();
+            st.Push(S[S.Length-1]);
+
+            for (int i = S.Length - 2; i >= 0; i--)
+            {
+                if (st.Count > 0 && st.Peek() == S[i])
+                {
+                    st.Pop();
+                }
+
+                else
+                {
+                    st.Push(S[i]);
+                }
+            }
+
+            foreach(var j in st)
+            {
+                Console.WriteLine(j);
+            }
+
+
+            char[] a = st.ToArray();
+
+            return new string(a);
+
+
+        }
+
     }
 }

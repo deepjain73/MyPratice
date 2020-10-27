@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
 namespace LeetCodePracticeProblems
@@ -7,6 +8,77 @@ namespace LeetCodePracticeProblems
     {
         static void Main(string[] args)
         {
+           
+
+            //int[] nums = { 2, 2, 1 };
+            //Dictionary<int,int> d = new Dictionary<int,int>();
+
+            //for (int i = 0; i < nums.Length; i++)
+            //{
+            //    if (d.ContainsKey(nums[i]))
+            //    {
+            //        d[nums[i]] = d[nums[i]] + 1;
+            //    }
+
+            //    else
+            //    {
+            //        d.Add(nums[i], 1);
+            //    }
+            //}
+
+            //foreach (var j in d)
+            //{
+            //    if (j.Value == 1)
+            //    {
+            //        Console.WriteLine(j.Key);
+            //    }
+            //}
+            // int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
+            // int k = 3;
+
+            //for(int i = 0; i<k; i++)
+            // {
+            //     int temp = nums[nums.Length - 1];
+
+            //     for(int j = nums.Length-2; j >= 0; j--)
+            //     {
+            //         nums[j+1] = nums[j];
+            //     }
+
+            //     nums[0] = temp;
+            // }
+
+            //foreach(var t in nums)
+            // {
+            //     Console.WriteLine(t);
+            // }
+
+            //int[] prices = { 7, 1, 5, 3, 6, 5 };
+            //int profit = 0;
+
+            //for (int i = 0; i < prices.Length-1; i++)
+            //{
+            //    if (prices[i + 1] > prices[i])
+            //    {
+            //        profit = profit + (prices[i + 1] - prices[i]);
+            //    }
+            //}
+
+            //Console.WriteLine( profit);
+            //int[] n = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+
+            //int i = 0;
+            //for(int j = 1;j<n.Length;j++)
+            //{
+            //    if (n[i] != n[j]) 
+            //    {
+            //        i++;
+            //    }
+
+            //    n[i] = n[j];
+            //}
+
+            //Console.WriteLine(i + 1);
             //GreatestNumberofCandies gc = new GreatestNumberofCandies();
             //int[] n = { 2, 8, 7 };
             //int k = 1;
